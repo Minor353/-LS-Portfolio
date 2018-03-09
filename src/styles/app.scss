@@ -1,0 +1,9 @@
+body{
+    margin: 100px;
+    background: #ccc;
+    display: flex;
+    transition: 2s;
+}
+@import 'common/menu';
+@import 'common/technologies';
+@import 'common/slider';
