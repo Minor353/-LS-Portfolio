@@ -1,0 +1,13 @@
+.autorization {
+    width: 380px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.autorization__form {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,6 +1,25 @@
-h2 {
-    text-transform: uppercase;
-    a {
-        color: red;
-    }
-}
+@import "util/normalize.scss";
+
+@import "util/sass-var.scss";
+
+
+
+@import "components/autorization.scss";
+
+@import "components/btn-autorization.scss";
+
+@import "components/btn-page.scss";
+
+@import "components/greeting.scss";
+
+@import "components/social.scss";
+
+@import "components/video.scss";
+
+@import "components/wrapper-greeting.scss";
+
+@import "components/index-img.scss";
+
+@import "components/index-wrapper.scss";
+
+@import "components/copywriting.scss";

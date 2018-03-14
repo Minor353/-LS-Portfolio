@@ -1,0 +1,19 @@
+.wrapper-greeting {
+    perspective: 1000px;
+    border: 1px solid transparent;
+}
+
+.wrapper-greeting__rotate {
+    background-color: rgba($color: #12223c, $alpha: 0.6);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    padding: 15px 20px;
+    width: 420px;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.wrapper-greeting__rotate:hover {
+    transform: rotateY(180deg);
+}

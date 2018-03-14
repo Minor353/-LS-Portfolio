@@ -1,0 +1,14 @@
+.social {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.social__link {
+    margin-right: 10px;
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}

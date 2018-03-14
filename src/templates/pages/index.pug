@@ -7,34 +7,55 @@ html
         meta(content="" name="keywords")
         meta(content="width=device-width, initial-scale=1" name="viewport")
         meta(content="ie=edge" http-equiv="x-ua-compatible")
-        link(rel='stylesheet' href='/assets/styles/app.min.css')
-        script(src='/assets/scripts/bundle.js' defer)
+        link(rel='stylesheet' href='assets/styles/app.min.css')
+        script(src='assets/scripts/bundle.js' defer)
     body
     .wrapper
         .index-wrapper
             .video
-            .index-img
+                video(autoplay, loop)
+                    source(src="assets/video/build.mp4")
             a.btn-autorization(href="#") Авторизация
-            section.greeting
-                .greeting__foto
-                .greeting__title
-                    h3.greeting__title-name Никитенко Геннадий
-                    .greeting__title-text
-                ul.social
-                    li.social__link
-                        a.social__link-vk(href="#") vk
-                    li.social__link
-                        a.social__link-git(href="#") git
-                    li.social__link
-                        a.social__link-in(href="#") in
-                ul.btn-page
-                    li.btn-page__item
-                        a.btn-page__link(href="#") Мои работы
-                    li.btn-page__item
-                        a.btn-page__link(href="#") Обо мне
-                    li.btn-page__item
-                        a.btn-page__link(href="#") Блог
-            .copywriting © Владимир Астахов | создано с любовью в LoftSchool | 2016
+            .wrapper-greeting
+                .wrapper-greeting__rotate
+                    section.greeting
+                        .greeting__foto
+                            img(src="assets/images/content/ava.jpg", alt="ava")
+                        .greeting__title
+                            h3.greeting__title-name Никитенко Геннадий
+                            .greeting__title-text Личный сайт веб разработчика
+                        ul.social
+                            li.social__link
+                                a.social__link-vk(href="#") vk
+                            li.social__link
+                                a.social__link-git(href="#") git
+                            li.social__link
+                                a.social__link-in(href="#") in
+                        ul.btn-page
+                            li.btn-page__item
+                                a.btn-page__link(href="#") Мои работы
+                            li.btn-page__item
+                                a.btn-page__link(href="#") Обо мне
+                            li.btn-page__item
+                                a.btn-page__link(href="#") Блог
+                    section.autorization
+                        h2.autorization__title Авторизируйтесь
+                        form(action="#" method="post").autorization__form
+                            input(type="text" placeholder="Логин").autorization__form-name
+                            input(type="password" placeholder="Пароль").autorization__form-pass
+                            label.autorization__label Я человек
+                                input(type="checkbox")
+                            .autorization__radio
+                                h6.autorization__radio-title Вы точно не робот?
+                                label.autorization__radio-label Да
+                                    input(type="radio" name="robot" value="yes" checked).autorization__radio-btn
+                                label.autorization__radio-label Не уверен
+                                    input(type="radio" name="robot" value="No").autorization__radio-btn
+                            .autorization__btn-wrapper
+                                button(type="reset").autorization__btn На главную
+                                button(type="submit").autorization__btn Войти
+            .copywriting © Владимир Астахов | создано с любовью в LoftSchool | 2018
+            .index-img
         
 
 

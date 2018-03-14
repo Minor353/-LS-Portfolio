@@ -7,32 +7,63 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/styles/app.min.css">
-    <script src="/assets/scripts/bundle.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/app.min.css">
+    <script src="assets/scripts/bundle.js" defer></script>
   </head>
   <body></body>
   <div class="wrapper">
     <div class="index-wrapper">
-      <div class="video"></div>
-      <div class="index-img"></div><a class="btn-autorization" href="#">Авторизация</a>
-      <section class="greeting">
-        <div class="greeting__foto"></div>
-        <div class="greeting__title">
-          <h3 class="greeting__title-name">Никитенко Геннадий</h3>
-          <div class="greeting__title-text"></div>
+      <div class="video">
+        <video autoplay loop>
+          <source src="assets/video/build.mp4">
+        </video>
+      </div><a class="btn-autorization" href="#">Авторизация</a>
+      <div class="wrapper-greeting">
+        <div class="wrapper-greeting__rotate">
+          <section class="greeting">
+            <div class="greeting__foto"><img src="assets/images/content/ava.jpg" alt="ava"></div>
+            <div class="greeting__title">
+              <h3 class="greeting__title-name">Никитенко Геннадий</h3>
+              <div class="greeting__title-text">Личный сайт веб разработчика</div>
+            </div>
+            <ul class="social">
+              <li class="social__link"><a class="social__link-vk" href="#">vk</a></li>
+              <li class="social__link"><a class="social__link-git" href="#">git</a></li>
+              <li class="social__link"><a class="social__link-in" href="#">in</a></li>
+            </ul>
+            <ul class="btn-page">
+              <li class="btn-page__item"><a class="btn-page__link" href="#">Мои работы</a></li>
+              <li class="btn-page__item"><a class="btn-page__link" href="#">Обо мне</a></li>
+              <li class="btn-page__item"><a class="btn-page__link" href="#">Блог</a></li>
+            </ul>
+          </section>
+          <section class="autorization">
+            <h2 class="autorization__title">Авторизируйтесь</h2>
+            <form class="autorization__form" action="#" method="post">
+              <input class="autorization__form-name" type="text" placeholder="Логин">
+              <input class="autorization__form-pass" type="password" placeholder="Пароль">
+              <label class="autorization__label">Я человек
+                <input type="checkbox">
+              </label>
+              <div class="autorization__radio">
+                <h6 class="autorization__radio-title">Вы точно не робот?</h6>
+                <label class="autorization__radio-label">Да
+                  <input class="autorization__radio-btn" type="radio" name="robot" value="yes" checked>
+                </label>
+                <label class="autorization__radio-label">Не уверен
+                  <input class="autorization__radio-btn" type="radio" name="robot" value="No">
+                </label>
+              </div>
+              <div class="autorization__btn-wrapper">
+                <button class="autorization__btn" type="reset">На главную</button>
+                <button class="autorization__btn" type="submit">Войти</button>
+              </div>
+            </form>
+          </section>
         </div>
-        <ul class="social">
-          <li class="social__link"><a class="social__link-vk" href="#">vk</a></li>
-          <li class="social__link"><a class="social__link-git" href="#">git</a></li>
-          <li class="social__link"><a class="social__link-in" href="#">in</a></li>
-        </ul>
-        <ul class="btn-page">
-          <li class="btn-page__item"><a class="btn-page__link" href="#">Мои работы</a></li>
-          <li class="btn-page__item"><a class="btn-page__link" href="#">Обо мне</a></li>
-          <li class="btn-page__item"><a class="btn-page__link" href="#">Блог</a></li>
-        </ul>
-      </section>
-      <div class="copywriting">© Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
+      </div>
+      <div class="copywriting">© Владимир Астахов | создано с любовью в LoftSchool | 2018</div>
+      <div class="index-img"></div>
     </div>
   </div>
 </html>

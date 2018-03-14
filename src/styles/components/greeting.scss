@@ -1,0 +1,29 @@
+.greeting {
+    width: 380px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.greeting__foto {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        width: 140px;
+    }
+}
+
+.greeting__title-name {
+    color: $white;
+}
+
+.greeting__title-text {
+    color: $white;
+}
