@@ -1,6 +1,25 @@
 .btn-page {
     padding: 0;
     margin: 0;
+    margin-left: -3px;
     list-style-type: none;
     display: flex;
+}
+
+.btn-page__link {
+    color: $white;
+    font-family: 'Roboto-Medium';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    text-decoration: none; 
+    padding: 17px 30px;
+    background-color: $blue;
+    border-right: 2px solid rgba($color: $white, $alpha: 0.4);
+}
+
+.btn-page__item:last-child {
+    .btn-page__link {
+        border-right: none;
+    }
 }

@@ -1,14 +1,37 @@
 .social {
     padding: 0;
     margin: 0;
+    margin-bottom: 64px;
     list-style-type: none;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
 }
 
 .social__link {
-    margin-right: 10px;
     a {
         color: $white;
         text-decoration: none;
+        width: 25px;
+        height: 25px;
     }
+}
+
+.social__icon-vk {
+    fill: $blue;
+    width: 30px;
+    height: 30px; 
+}
+
+.social__icon-git {
+    fill: $blue;
+    width: 25px;
+    height: 25px;
+}
+
+.social__icon-in {
+    fill: $blue;
+    width: 25px;
+    height: 25px;
 }

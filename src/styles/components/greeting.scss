@@ -1,12 +1,13 @@
 .greeting {
     width: 380px;
     position: absolute;
-    top: 10px;
-    left: 20px;
+    top: 30px;
+    left: 0;
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .greeting__foto {
@@ -14,16 +15,32 @@
     height: 140px;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 15px;
 
     img {
         width: 140px;
     }
 }
 
+.greeting__title {
+    margin-bottom: 20px;
+}
+
 .greeting__title-name {
     color: $white;
+    font-family: 'Roboto-Medium';
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .greeting__title-text {
-    color: $white;
+    color: rgba($color: $white, $alpha: 0.8);
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
 }

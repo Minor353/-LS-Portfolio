@@ -27,9 +27,18 @@
               <div class="greeting__title-text">Личный сайт веб разработчика</div>
             </div>
             <ul class="social">
-              <li class="social__link"><a class="social__link-vk" href="#">vk</a></li>
-              <li class="social__link"><a class="social__link-git" href="#">git</a></li>
-              <li class="social__link"><a class="social__link-in" href="#">in</a></li>
+              <li class="social__link"><a class="social__link-vk" href="#">
+                  <svg class="social__icon-vk">
+                    <use xlink:href="assets/images/sprite.svg#vk"> </use>
+                  </svg></a></li>
+              <li class="social__link"><a class="social__link-git" href="#">
+                  <svg class="social__icon-git">
+                    <use xlink:href="assets/images/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="social__link"><a class="social__link-in" href="#">
+                  <svg class="social__icon-in">
+                    <use xlink:href="assets/images/sprite.svg#in"></use>
+                  </svg></a></li>
             </ul>
             <ul class="btn-page">
               <li class="btn-page__item"><a class="btn-page__link" href="#">Мои работы</a></li>
@@ -40,18 +49,22 @@
           <section class="autorization">
             <h2 class="autorization__title">Авторизируйтесь</h2>
             <form class="autorization__form" action="#" method="post">
-              <input class="autorization__form-name" type="text" placeholder="Логин">
-              <input class="autorization__form-pass" type="password" placeholder="Пароль">
-              <label class="autorization__label">Я человек
-                <input type="checkbox">
+              <div class="autorization__input-wrapper autorization__input-name">
+                <input class="form__input" type="text" placeholder="Логин">
+              </div>
+              <div class="autorization__input-wrapper autorization__input-pass">
+                <input class="form__input" type="password" placeholder="Пароль">
+              </div>
+              <label class="autorization__label"> 
+                <input class="autorization__checkbox-btn" type="checkbox"><span class="autorization__label-text"> Я человек</span>
               </label>
               <div class="autorization__radio">
                 <h6 class="autorization__radio-title">Вы точно не робот?</h6>
-                <label class="autorization__radio-label">Да
-                  <input class="autorization__radio-btn" type="radio" name="robot" value="yes" checked>
+                <label class="autorization__radio-label"> 
+                  <input class="autorization__radio-btn" type="radio" name="robot" value="yes" checked><span class="autorization__radio-text">Да</span>
                 </label>
-                <label class="autorization__radio-label">Не уверен
-                  <input class="autorization__radio-btn" type="radio" name="robot" value="No">
+                <label class="autorization__radio-label"> 
+                  <input class="autorization__radio-btn" type="radio" name="robot" value="No"><span class="autorization__radio-text">Не уверен</span>
                 </label>
               </div>
               <div class="autorization__btn-wrapper">

@@ -26,11 +26,17 @@ html
                             .greeting__title-text Личный сайт веб разработчика
                         ul.social
                             li.social__link
-                                a.social__link-vk(href="#") vk
+                                a.social__link-vk(href="#")
+                                    svg.social__icon-vk
+                                        use(xlink:href="assets/images/sprite.svg#vk") 
                             li.social__link
-                                a.social__link-git(href="#") git
+                                a.social__link-git(href="#")
+                                    svg.social__icon-git
+                                        use(xlink:href="assets/images/sprite.svg#github")
                             li.social__link
-                                a.social__link-in(href="#") in
+                                a.social__link-in(href="#")
+                                    svg.social__icon-in
+                                        use(xlink:href="assets/images/sprite.svg#in")
                         ul.btn-page
                             li.btn-page__item
                                 a.btn-page__link(href="#") Мои работы
@@ -41,16 +47,21 @@ html
                     section.autorization
                         h2.autorization__title Авторизируйтесь
                         form(action="#" method="post").autorization__form
-                            input(type="text" placeholder="Логин").autorization__form-name
-                            input(type="password" placeholder="Пароль").autorization__form-pass
-                            label.autorization__label Я человек
-                                input(type="checkbox")
+                            .autorization__input-wrapper.autorization__input-name
+                                input(type="text" placeholder="Логин").form__input
+                            .autorization__input-wrapper.autorization__input-pass
+                                input(type="password" placeholder="Пароль").form__input
+                            label.autorization__label 
+                                input(type="checkbox").autorization__checkbox-btn
+                                span.autorization__label-text  Я человек
                             .autorization__radio
                                 h6.autorization__radio-title Вы точно не робот?
-                                label.autorization__radio-label Да
+                                label.autorization__radio-label 
                                     input(type="radio" name="robot" value="yes" checked).autorization__radio-btn
-                                label.autorization__radio-label Не уверен
+                                    span.autorization__radio-text Да
+                                label.autorization__radio-label 
                                     input(type="radio" name="robot" value="No").autorization__radio-btn
+                                    span.autorization__radio-text Не уверен
                             .autorization__btn-wrapper
                                 button(type="reset").autorization__btn На главную
                                 button(type="submit").autorization__btn Войти

@@ -16,6 +16,11 @@ const gulpWebpack = require('gulp-webpack');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
 
+const svgSprite = require('gulp-svg-sprite'),
+      svgmin = require('gulp-svgmin'),
+      cheerio = require('gulp-cheerio'),
+      replace = require('gulp-replace');
+
 const paths = {
     root: './build',
     templates: {
@@ -33,6 +38,10 @@ const paths = {
     fonts: {
         src: 'src/fonts/**/*.*',
         dest: 'build/assets/fonts/'
+    },
+    video: {
+        src: 'src/video/**/*.*',
+        dest: 'build/assets/video/'
     },
     scripts: {
         src: 'src/scripts/**/*.js',
@@ -102,6 +111,12 @@ function fonts() {
     .pipe(gulp.dest(paths.fonts.dest));
 }
 
+//перенос видео
+function video() {
+    return gulp.src(paths.video.src)
+    .pipe(gulp.dest(paths.video.dest));
+}
+
 //Конвертация шрифтов
 function convWoff(){
     return gulp.src(['fonts/*.ttf'])
@@ -109,16 +124,57 @@ function convWoff(){
       .pipe(gulp.dest('fonts/woff'));
   };
 
+  //сборка svg спрайта
+  const config = {
+    mode: {
+      symbol: {
+        sprite: "../sprite.svg",
+        example: {
+          dest: '../tmp/spriteSvgDemo.html' // демо html
+        }
+      }
+    }
+  };
+
+  function spritesvg() {
+	return gulp.src('src/images/icons/*.svg')
+    // минифицируем svg
+    .pipe(svgmin({
+      js2svg: {
+        pretty: true
+      }
+    }))
+    // удалить все атрибуты fill, style and stroke в фигурах
+    .pipe(cheerio({
+      run: function($) {
+        $('[fill]').removeAttr('fill');
+        $('[stroke]').removeAttr('stroke');
+        $('[style]').removeAttr('style');
+      },
+      parserOptions: {
+        xmlMode: true
+      }
+    }))
+    // cheerio плагин заменит, если появилась, скобка '&gt;', на нормальную.
+    .pipe(replace('&gt;', '>'))
+    // build svg sprite
+    .pipe(svgSprite(config))
+    .pipe(gulp.dest('sprite/'));
+};
+
+
 exports.templates = templates;
 exports.styles = styles;
 exports.clean = clean;
 exports.images = images;
 exports.fonts = fonts;
+exports.video = video;
 exports.convWoff = convWoff;
+exports.spritesvg = spritesvg;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, templates, images, fonts, scripts),
+    gulp.parallel(styles, templates, images, fonts, video, scripts),
     gulp.parallel(watch, server)
 ));
 
@@ -126,3 +182,7 @@ gulp.task('woff', gulp.series(
     convWoff
 ));
 
+
+gulp.task('spritesvg', gulp.series(
+    spritesvg
+));

@@ -1,5 +1,5 @@
 .autorization {
-    width: 380px;
+    //width: 380px;
     transform: rotateY(180deg);
     backface-visibility: hidden;
     display: flex;
@@ -10,4 +10,190 @@
 .autorization__form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.autorization__title {
+    color: $white;
+    font-family: 'Sansus-Webissimo-Regular';
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 41px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.autorization__form {
+    width: 100%;
+}
+
+.form__input {
+    width: 100%;
+    padding: 12px 0;
+    padding-left: 60px;
+    box-sizing: border-box;
+    font-family: 'Roboto-Regular';
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+}
+
+.autorization__input-wrapper {
+    position: relative;
+    width: 90%;
+}
+
+.autorization__input-wrapper:after {
+    content: '';
+    display: block;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f0efe9;
+}
+
+.autorization__input-name:after {
+    background-image: url('../images/icons/login.svg');
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: center;
+}
+
+.autorization__input-pass:after {
+    background-image: url('../images/icons/password.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+
+.autorization__label {
+    width: 100px;
+    padding-left: 30px;
+    .autorization__label-text {
+        position: relative;
+        color: $white;
+        font-family: 'Roboto-Regular';
+        font-weight: 400;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+}
+
+.autorization__label-text:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border-radius: 3px;
+}
+
+.autorization__label-text:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -25px;
+    width: 8px;
+    height: 3px;
+    border-left: 3px solid $white;
+    border-bottom: 3px solid $white;
+    transform: rotate(-45deg);
+}
+
+.autorization__checkbox-btn:checked + .autorization__label-text:before {
+    background-color: $blue;
+}
+
+.autorization__checkbox-btn {
+    display: none;
+}
+
+.autorization__radio-title {
+    color: $white;
+    font-family: 'Roboto-Bold';
+    font-weight: 500;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.autorization__radio {
+    text-align: center;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+}
+ 
+.autorization__radio-label {
+    margin-right: 16px;
+    padding-left: 45px;
+}
+
+.autorization__radio-text {
+    color: $white;
+    font-family: 'Roboto-Medium';
+    font-weight: 400;
+    font-size: 15px;
+    position: relative;
+}
+
+.autorization__radio-text:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+.autorization__radio-text:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $white;
+    position: absolute;
+    top: 6px;
+    left: -24px;
+}*
+.autorization__radio-btn {
+    display: none;
+}
+
+.autorization__radio-btn:checked + .autorization__radio-text:after {
+    background-color: $blue;
+}
+
+.autorization__btn-wrapper {
+    width: 100%;
+}
+
+.autorization__btn {
+    color: $white;
+    font-family: 'Roboto-Medium';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    text-decoration: none; 
+    width: 188px;
+    margin: 0;
+    padding: 14px 30px;
+    background-color: $blue;
+    border: none;
+    border-right: 2px solid rgba($color: $white, $alpha: 0.4);
+    box-sizing: border-box;
+}
+
+.autorization__btn:last-child {
+    border-right: none;
+    margin-left: -4px;
 }
