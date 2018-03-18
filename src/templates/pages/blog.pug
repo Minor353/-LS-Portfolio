@@ -1,0 +1,105 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title #{title}
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel='stylesheet' href='assets/styles/app.min.css')
+        script(src='assets/scripts/bundle.js' defer)
+    body
+        .wrapper
+            nav.nav 
+                ul.nav__wrap
+                    li.nav__item
+                        a(href="my-works.html").nav__link Мои работы
+                    li.nav__item
+                        a(href="about.html").nav__link Обо мне
+                    li.nav__item
+                        a(href="blog.html").nav__link Блог
+                    li.nav__item
+                        a(href="index.html").nav__link Авторизация    
+            section.about-title
+                .about-title__social
+                    ul.social
+                        li.social__link
+                            a.social__link-vk(href="#")
+                                svg.social__icon-vk
+                                    use(xlink:href="assets/images/sprite.svg#vk") 
+                        li.social__link
+                            a.social__link-git(href="#")
+                                svg.social__icon-git
+                                    use(xlink:href="assets/images/sprite.svg#github")
+                        li.social__link
+                            a.social__link-in(href="#")
+                                svg.social__icon-in
+                                    use(xlink:href="assets/images/sprite.svg#in")
+                a(href="#").burger
+                    .burger-btn
+                .about-title__greeting
+                    img(src="assets/images/icons/stars1.svg", alt="stars").about-title__greeting-bg
+                    section.greeting
+                        .greeting__foto
+                            img(src="assets/images/content/ava.jpg", alt="ava")
+                        .greeting__title
+                            h3.greeting__blog-title БЛОГ
+                            .greeting__title-text Статьи, которые я написал
+            section.blog
+                .blog__section-left
+                    ul.blog__title-wrap
+                        li.blog__title-item
+                            a(href="#") Самое важное в SASS
+                        li.blog__title-item
+                            a(href="#") Приёмы в вёрстке, без которых не обходится ни один сайт
+                .blog__section-right
+                    ul.blog__article-wrap
+                        li.blog__article-item
+                            h2.blog__article-title Самое важное в SASS
+                            .blog__article-time 22 ноября 2016
+                            .blog__article-text Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия. Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                        li.blog__article-item
+                            h2.blog__article-title Приёмы в вёрстке, без которых не обходится ни один сайт
+                            .blog__article-time 13 ноября 2016
+                            .blog__article-text Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия. Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+            
+            footer.footer
+                .footer__content-wrap
+                    .footer__text
+                        p Этот сайт я сделал в рамках обучения в Школе <br> онлайн образования LoftSchool.
+                    .footer__links
+                        ul.footer__nav
+                            li.footer__nav-item
+                                a(href="my-works.html").footer__nav-link Мои работы
+                            li.footer__nav-item
+                                a(href="about.html").footer__nav-link Обо мне
+                            li.footer__nav-item
+                                a(href="blog.html").footer__nav-link Блог
+                            li.footer__nav-item
+                                a(href="index.html").footer__nav-link Авторизация
+                        .footer__social-wrap
+                            ul.social
+                                li.social__link
+                                    a.social__link-vk(href="#")
+                                        svg.social__icon-vk
+                                            use(xlink:href="assets/images/sprite.svg#vk") 
+                                li.social__link
+                                    a.social__link-git(href="#")
+                                        svg.social__icon-git
+                                            use(xlink:href="assets/images/sprite.svg#github")
+                                li.social__link
+                                    a.social__link-in(href="#")
+                                        svg.social__icon-in
+                                            use(xlink:href="assets/images/sprite.svg#in")
+                    .footer__contact-links
+                        ul.footer__contact-wrap
+                            li.footer__contact-item
+                                a.footer__contact-link(href="#") vankert25
+                            li.footer__contact-item
+                                a.footer__contact-link(href="#") vankert353@gmail.com
+                            li.footer__contact-item
+                                a.footer__contact-link(href="#") +3 8 093 403 77 67
+                            li.footer__contact-item
+                                a.footer__contact-link(href="#") Днепр пр.Героев д. 18
+                .footer__copyright © Владимир Астахов | создано с любовью в LoftSchool | 2018

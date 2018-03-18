@@ -10,73 +10,74 @@
     <link rel="stylesheet" href="assets/styles/app.min.css">
     <script src="assets/scripts/bundle.js" defer></script>
   </head>
-  <body></body>
-  <div class="wrapper">
-    <div class="index-wrapper">
-      <div class="video">
-        <video autoplay loop>
-          <source src="assets/video/build.mp4">
-        </video>
-      </div><a class="btn-autorization" href="#">Авторизация</a>
-      <div class="wrapper-greeting">
-        <div class="wrapper-greeting__rotate">
-          <section class="greeting">
-            <div class="greeting__foto"><img src="assets/images/content/ava.jpg" alt="ava"></div>
-            <div class="greeting__title">
-              <h3 class="greeting__title-name">Никитенко Геннадий</h3>
-              <div class="greeting__title-text">Личный сайт веб разработчика</div>
-            </div>
-            <ul class="social">
-              <li class="social__link"><a class="social__link-vk" href="#">
-                  <svg class="social__icon-vk">
-                    <use xlink:href="assets/images/sprite.svg#vk"> </use>
-                  </svg></a></li>
-              <li class="social__link"><a class="social__link-git" href="#">
-                  <svg class="social__icon-git">
-                    <use xlink:href="assets/images/sprite.svg#github"></use>
-                  </svg></a></li>
-              <li class="social__link"><a class="social__link-in" href="#">
-                  <svg class="social__icon-in">
-                    <use xlink:href="assets/images/sprite.svg#in"></use>
-                  </svg></a></li>
-            </ul>
-            <ul class="btn-page">
-              <li class="btn-page__item"><a class="btn-page__link" href="#">Мои работы</a></li>
-              <li class="btn-page__item"><a class="btn-page__link" href="#">Обо мне</a></li>
-              <li class="btn-page__item"><a class="btn-page__link" href="#">Блог</a></li>
-            </ul>
-          </section>
-          <section class="autorization">
-            <h2 class="autorization__title">Авторизируйтесь</h2>
-            <form class="autorization__form" action="#" method="post">
-              <div class="autorization__input-wrapper autorization__input-name">
-                <input class="form__input" type="text" placeholder="Логин">
+  <body>
+    <div class="wrapper">
+      <div class="index-wrapper">
+        <div class="video">
+          <video autoplay loop>
+            <source src="assets/video/build.mp4">
+          </video>
+        </div><a class="btn-autorization" href="#">Авторизация</a>
+        <div class="wrapper-greeting">
+          <div class="wrapper-greeting__rotate">
+            <section class="greeting greeting-index">
+              <div class="greeting__foto"><img src="assets/images/content/ava.jpg" alt="ava"></div>
+              <div class="greeting__title">
+                <h3 class="greeting__title-name">Никитенко Геннадий</h3>
+                <div class="greeting__title-text">Личный сайт веб разработчика</div>
               </div>
-              <div class="autorization__input-wrapper autorization__input-pass">
-                <input class="form__input" type="password" placeholder="Пароль">
-              </div>
-              <label class="autorization__label"> 
-                <input class="autorization__checkbox-btn" type="checkbox"><span class="autorization__label-text"> Я человек</span>
-              </label>
-              <div class="autorization__radio">
-                <h6 class="autorization__radio-title">Вы точно не робот?</h6>
-                <label class="autorization__radio-label"> 
-                  <input class="autorization__radio-btn" type="radio" name="robot" value="yes" checked><span class="autorization__radio-text">Да</span>
+              <ul class="social">
+                <li class="social__link"><a class="social__link-vk" href="#">
+                    <svg class="social__icon-index social__icon-vk">
+                      <use xlink:href="assets/images/sprite.svg#vk"> </use>
+                    </svg></a></li>
+                <li class="social__link"><a class="social__link-git" href="#">
+                    <svg class="social__icon-index social__icon-git">
+                      <use xlink:href="assets/images/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="social__link"><a class="social__link-in" href="#">
+                    <svg class="social__icon-index social__icon-in">
+                      <use xlink:href="assets/images/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+              <ul class="btn-page">
+                <li class="btn-page__item"><a class="btn-page__link" href="my-works.html">Мои работы</a></li>
+                <li class="btn-page__item"><a class="btn-page__link" href="about.html">Обо мне</a></li>
+                <li class="btn-page__item"><a class="btn-page__link" href="blog.html">Блог</a></li>
+              </ul>
+            </section>
+            <section class="autorization">
+              <h2 class="autorization__title">Авторизируйтесь</h2>
+              <form class="autorization__form" action="#" method="post">
+                <div class="autorization__input-wrapper autorization__input-name">
+                  <input class="form__input" type="text" placeholder="Логин">
+                </div>
+                <div class="autorization__input-wrapper autorization__input-pass">
+                  <input class="form__input" type="password" placeholder="Пароль">
+                </div>
+                <label class="autorization__label"> 
+                  <input class="autorization__checkbox-btn" type="checkbox"><span class="autorization__label-text"> Я человек</span>
                 </label>
-                <label class="autorization__radio-label"> 
-                  <input class="autorization__radio-btn" type="radio" name="robot" value="No"><span class="autorization__radio-text">Не уверен</span>
-                </label>
-              </div>
-              <div class="autorization__btn-wrapper">
-                <button class="autorization__btn" type="reset">На главную</button>
-                <button class="autorization__btn" type="submit">Войти</button>
-              </div>
-            </form>
-          </section>
+                <div class="autorization__radio">
+                  <h6 class="autorization__radio-title">Вы точно не робот?</h6>
+                  <label class="autorization__radio-label"> 
+                    <input class="autorization__radio-btn" type="radio" name="robot" value="yes" checked><span class="autorization__radio-text">Да</span>
+                  </label>
+                  <label class="autorization__radio-label"> 
+                    <input class="autorization__radio-btn" type="radio" name="robot" value="No"><span class="autorization__radio-text">Не уверен</span>
+                  </label>
+                </div>
+                <div class="autorization__btn-wrapper">
+                  <button class="autorization__btn" type="reset">На главную</button>
+                  <button class="autorization__btn" type="submit">Войти</button>
+                </div>
+              </form>
+            </section>
+          </div>
         </div>
+        <div class="copywriting">© Владимир Астахов | создано с любовью в LoftSchool | 2018</div>
+        <div class="index-img"></div>
       </div>
-      <div class="copywriting">© Владимир Астахов | создано с любовью в LoftSchool | 2018</div>
-      <div class="index-img"></div>
     </div>
-  </div>
+  </body>
 </html>

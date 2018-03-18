@@ -1,0 +1,137 @@
+.about-main {
+    display: flex;
+
+}
+
+.about-main__left {
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 20px;
+    background-color: #f2f0e8;
+}
+
+.about-main__right {
+    width: 50%;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 30px;
+    background-color: #f4f5f0; 
+}
+
+.about-main__left-wrap {
+    max-width: 770px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-main__left-title {
+    font-family: 'Sansus-Webissimo-Regular';
+    font-weight: 300;
+    font-size: 63px;
+    color: $grey;
+    width: 267px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 40;
+}
+
+.about-main__left-title-bg {
+    transform: rotate(190deg);
+    position: absolute;
+    top: -24px;
+    left: 25px;
+    z-index: -1;
+}
+
+.about-main__left-content {
+    width: 467px;
+    margin: 0 auto;
+    h4 {
+        border-bottom: 2px solid $grey;
+        font-family: 'Sansus-Webissimo-Regular';
+        font-weight: 300;
+        font-size: 53px;
+        color: $grey;
+        width: 122px;
+        padding: 25px 0;
+        text-transform: uppercase;
+        margin: 0 auto;
+        margin-bottom: 23px;
+    }
+
+    p {
+        font-family: 'Roboto-Regular';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: $grey;
+    }
+}
+
+.about-main__content-img {
+    height: 340px;
+    width: 440px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    img {
+        height: 100%;
+    }
+}
+
+.about-main__right-content {
+    p {
+        font-family: 'Roboto-Regular';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: $grey;
+        margin-bottom: 60px;
+    }
+
+    h5 {
+        font-family: 'Roboto-Medium';
+        font-weight: 400;
+        font-size: 28px;  
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
+}
+
+.about-main__right-title {
+    font-family: 'Sansus-Webissimo-Regular';
+    font-weight: 300;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $grey;
+    width: 267px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.about-main__right-title:after {
+    content: '';
+    position: absolute;
+    width: 90px;
+    border: 3px solid $grey;
+    bottom: -26px;
+    left: 90px;
+}
+
+
+.about-main__frontend-wrap {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+}
+
+.about-main__frontend-item {
+    margin-right: 35px;
+}
+
+.about-main__frontend-item:last-child {
+    margin-right: 0;
+}

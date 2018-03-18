@@ -1,0 +1,60 @@
+.about-contact {
+    position: relative;
+    height: 100vh;
+}
+
+.contact__map {
+    height: 100%;
+    background-image: url('../images/content/map.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.contact__content {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 580px;
+    padding: 30px 20px;
+    background-color: rgba($color: $white, $alpha: .7);
+}
+
+.contact__content-title {
+    font-family: 'Sansus-Webissimo-Regular';
+    font-weight: 300;
+    font-size: 35px;
+    color: $grey;
+    margin: 0;
+}
+
+.contact__link-img {
+    width: 45px;
+    height: 45px;
+    fill: $blue;
+    margin-right: 10px; 
+}
+
+.contact__content-wrap {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__content-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Roboto-Medium';
+    font-weight: 400;
+    font-size: 16px;
+    color: $grey;
+}
+
+.contact__content-item {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}

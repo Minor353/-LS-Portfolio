@@ -1,0 +1,195 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title #{title}
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel='stylesheet' href='assets/styles/app.min.css')
+        script(src='assets/scripts/bundle.js' defer)
+    body
+        .wrapper
+            nav.nav 
+                ul.nav__wrap
+                    li.nav__item
+                        a(href="my-works.html").nav__link Мои работы
+                    li.nav__item
+                        a(href="about.html").nav__link Обо мне
+                    li.nav__item
+                        a(href="blog.html").nav__link Блог
+                    li.nav__item
+                        a(href="index.html").nav__link Авторизация    
+            section.about-title
+                .about-title__social
+                    ul.social
+                        li.social__link
+                            a.social__link-vk(href="#")
+                                svg.social__icon-vk
+                                    use(xlink:href="assets/images/sprite.svg#vk") 
+                        li.social__link
+                            a.social__link-git(href="#")
+                                svg.social__icon-git
+                                    use(xlink:href="assets/images/sprite.svg#github")
+                        li.social__link
+                            a.social__link-in(href="#")
+                                svg.social__icon-in
+                                    use(xlink:href="assets/images/sprite.svg#in")
+                a(href="#").burger
+                    .burger-btn
+                .about-title__greeting
+                    img(src="assets/images/icons/stars1.svg", alt="stars").about-title__greeting-bg
+                    section.greeting
+                        .greeting__foto
+                            img(src="assets/images/content/ava.jpg", alt="ava")
+                        .greeting__title
+                            h3.greeting__title-name Никитенко Геннадий
+                            .greeting__title-text Личный сайт веб разработчика
+                .arrow-btn
+            section.about-main
+                .about-main__left
+                    .about-main__left-wrap
+                        h3.about-main__left-title ОБО МНЕ
+                            svg(x="0px" y="0px" width="171.5px" height="132.5px" viewBox="0 0 171.5 132.5" enable-background="new 0 0 171.5 132.5" xml:space="preserve").about-main__left-title-bg
+                                <circle fill="#dbe0e6" cx="4.25" cy="92.25" r="4.25"/>
+                                <circle fill="#dbe0e6" cx="48.25" cy="128.25" r="4.25"/>
+                                <circle fill="#dbe0e6" cx="72.75" cy="52.75" r="4.75"/>
+                                <circle fill="#dbe0e6" cx="8.25" cy="22.25" r="4.25"/>
+                                <circle fill="#dbe0e6" cx="117.25" cy="96.25" r="2.75"/>
+                                <circle fill="#dbe0e6" cx="126.25" cy="41.25" r="1.911"/>
+                                <circle fill="#dbe0e6" cx="167.25" cy="4.25" r="4.25"/>
+                                <polyline fill="none" stroke="#dbe0e6" stroke-miterlimit="10" points="72.75,52.75 117.25,96.25 4.25,92.25 48.25,128.25 117.25,96.25 167.25,4.25 126.25,41.25 72.75,54.334 8.25,22.25 "/>
+                                <line fill="none" stroke="#dbe0e6" stroke-miterlimit="10" x1="48.25" y1="131.334" x2="8.5" y2="24.339"/>
+
+                        .about-main__left-content
+                            .about-main__content-img
+                                img(src="assets/images/content/ava.jpg", alt="My foto")
+                            h4 Кто Я
+                            p Я веб разработчик из Днепра. Мне 27 лет. Я занимаюсь разработкой современныйх сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите как тут все класно и красиво! 
+                .about-main__right
+                    .about-main__right-content
+                        h3.about-main__right-title Чем я могу быть вам полезен
+                        p Больше всего меня привлекает Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                        .about-main__frontend
+                            h5 Frontend
+                            ul.about-main__frontend-wrap
+                                li.about-main__frontend-item
+                                    svg(viewBox='0 0 110 110').circles
+                                        circle(r="45" cx="50%" cy="50%" fill="none").circle__first
+                                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15 
+                                li.about-main__frontend-item
+                                    svg(viewBox='0 0 110 110').circles
+                                        circle(r="45" cx="50%" cy="50%" fill="none").circle__first
+                                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-25 
+                                li.about-main__frontend-item
+                                    svg(viewBox='0 0 110 110').circles
+                                        circle(r="45" cx="50%" cy="50%" fill="none").circle__first
+                                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-55 
+                        .about-main__backend
+                            h5 Backend
+                            ul.about-main__frontend-wrap
+                                li.about-main__frontend-item
+                                    svg(viewBox='0 0 110 110').circles
+                                        circle(r="45" cx="50%" cy="50%" fill="none").circle__first
+                                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15 
+                                li.about-main__frontend-item
+                                    svg(viewBox='0 0 110 110').circles
+                                        circle(r="45" cx="50%" cy="50%" fill="none").circle__first
+                                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15 
+                                li.about-main__frontend-item
+                                    svg(viewBox='0 0 110 110').circles
+                                        circle(r="45" cx="50%" cy="50%" fill="none").circle__first
+                                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15
+                                li.about-main__frontend-item
+                                    svg(viewBox='0 0 110 110').circles
+                                        circle(r="45" cx="50%" cy="50%" fill="none").circle__first
+                                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15
+                        .about-main__workflow
+                            h5 WorkFlow
+                            ul.about-main__frontend-wrap
+                                li.about-main__frontend-item
+                                    svg(viewBox='0 0 110 110').circles
+                                        circle(r="45" cx="50%" cy="50%" fill="none").circle__first
+                                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15 
+                                li.about-main__frontend-item
+                                    svg(viewBox='0 0 110 110').circles
+                                        circle(r="45" cx="50%" cy="50%" fill="none").circle__first
+                                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15 
+                                li.about-main__frontend-item
+                                    svg(viewBox='0 0 110 110').circles
+                                        circle(r="45" cx="50%" cy="50%" fill="none").circle__first
+                                        circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15
+            section.about-contact
+                .contact__map#map
+                .contact__content
+                    h4.contact__content-title Контакты
+                    ul.contact__content-wrap
+                        li.contact__content-item
+                            a.contact__content-link(href="#")
+                                svg.contact__link-img
+                                    use(xlink:href="assets/images/sprite.svg#skype_n")
+                                .contact__link-text vankert25
+                        li.contact__content-item
+                            a.contact__content-link(href="#")
+                                svg.contact__link-img
+                                    use(xlink:href="assets/images/sprite.svg#phone_n")
+                                .contact__link-text +3 8 093 403 77 67
+                        li.contact__content-item
+                            a.contact__content-link(href="#")
+                                svg.contact__link-img
+                                    use(xlink:href="assets/images/sprite.svg#envelope_n")
+                                .contact__link-text vankert353@gmail.com
+                        li.contact__content-item
+                            a.contact__content-link(href="#")
+                                svg.contact__link-img
+                                    use(xlink:href="assets/images/sprite.svg#map_n")
+                                .contact__link-text Днепр пр.Героев д. 18
+            footer.footer
+                .footer__content-wrap
+                    .footer__text
+                        p Этот сайт я сделал в рамках обучения в Школе <br> онлайн образования LoftSchool.
+                    .footer__links
+                        ul.footer__nav
+                            li.footer__nav-item
+                                a(href="my-works.html").footer__nav-link Мои работы
+                            li.footer__nav-item
+                                a(href="about.html").footer__nav-link Обо мне
+                            li.footer__nav-item
+                                a(href="blog.html").footer__nav-link Блог
+                            li.footer__nav-item
+                                a(href="index.html").footer__nav-link Авторизация
+                        .footer__social-wrap
+                            ul.social
+                                li.social__link
+                                    a.social__link-vk(href="#")
+                                        svg.social__icon-vk
+                                            use(xlink:href="assets/images/sprite.svg#vk") 
+                                li.social__link
+                                    a.social__link-git(href="#")
+                                        svg.social__icon-git
+                                            use(xlink:href="assets/images/sprite.svg#github")
+                                li.social__link
+                                    a.social__link-in(href="#")
+                                        svg.social__icon-in
+                                            use(xlink:href="assets/images/sprite.svg#in")
+                    .footer__contact-links
+                        ul.footer__contact-wrap
+                            li.footer__contact-item
+                                a.footer__contact-link(href="#") vankert25
+                            li.footer__contact-item
+                                a.footer__contact-link(href="#") vankert353@gmail.com
+                            li.footer__contact-item
+                                a.footer__contact-link(href="#") +3 8 093 403 77 67
+                            li.footer__contact-item
+                                a.footer__contact-link(href="#") Днепр пр.Героев д. 18
+                .footer__copyright © Владимир Астахов | создано с любовью в LoftSchool | 2018
+
+                
+
+
+
+                            
+
+                
