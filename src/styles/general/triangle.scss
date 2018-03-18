@@ -1,0 +1,32 @@
+.triangle-wrap {
+    position: absolute;
+    top: -147px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.traingle {
+    display: block;
+    width: 100%;
+    height: 225px;
+}
+
+.traingle .left{
+    fill: #f2f0e8;
+}
+
+.traingle .right{
+    fill: #f4f5f0;
+}
+
+.triangle--color {
+     .left{
+        fill: #faf8f0;
+    }
+    
+     .right{
+        fill: #faf8f0;
+    }
+}
