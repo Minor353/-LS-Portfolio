@@ -11,22 +11,24 @@
     display: block;
     width: 100%;
     height: 225px;
+
+    &__left {
+        fill: #f2f0e8;
+    }
+
+    &__right {
+        fill: #f4f5f0;
+    }
 }
 
-.traingle .left{
-    fill: #f2f0e8;
-}
 
-.traingle .right{
-    fill: #f4f5f0;
-}
 
 .triangle--color {
-     .left{
+    .traingle__left{
         fill: #faf8f0;
     }
     
-     .right{
+    .traingle__right{
         fill: #faf8f0;
     }
 }

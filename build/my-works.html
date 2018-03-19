@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="assets/styles/app.min.css">
+    <script src="assets/scripts/bundle.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav"> 
+        <ul class="nav__wrap">
+          <li class="nav__item"><a class="nav__link" href="my-works.html">Мои работы</a></li>
+          <li class="nav__item"><a class="nav__link" href="about.html">Обо мне</a></li>
+          <li class="nav__item"><a class="nav__link" href="blog.html">Блог</a></li>
+          <li class="nav__item"><a class="nav__link" href="index.html">Авторизация    </a></li>
+        </ul>
+      </nav>
+      <section class="about-title">
+        <div class="about-title__social">
+          <ul class="social">
+            <li class="social__link"><a class="social__link-vk" href="#">
+                <svg class="social__icon-vk">
+                  <use xlink:href="assets/images/sprite.svg#vk"> </use>
+                </svg></a></li>
+            <li class="social__link"><a class="social__link-git" href="#">
+                <svg class="social__icon-git">
+                  <use xlink:href="assets/images/sprite.svg#github"></use>
+                </svg></a></li>
+            <li class="social__link"><a class="social__link-in" href="#">
+                <svg class="social__icon-in">
+                  <use xlink:href="assets/images/sprite.svg#in"></use>
+                </svg></a></li>
+          </ul>
+        </div><a class="burger" href="#">
+          <div class="burger__btn"></div></a>
+        <div class="about-title__greeting"><img class="about-title__greeting-bg" src="assets/images/icons/stars1.svg" alt="stars">
+          <section class="greeting">
+            <div class="greeting__foto"><img src="assets/images/content/ava.jpg" alt="ava"></div>
+            <div class="greeting__title">
+              <h3 class="greeting__title-name">Никитенко Геннадий</h3>
+              <div class="greeting__title-text">Личный сайт веб разработчика</div>
+            </div>
+          </section>
+        </div><a class="arrow-btn" href="#">
+          <svg class="social__icon-in">
+            <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
+          </svg></a>
+      </section>
+      <section class="works-main">
+        <div class="triangle-wrap">
+          <svg class="traingle triangle--color" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 125" preserveaspectratio="none">
+            <polygon class="traingle__left" points="0,0   0,225   500.8,225   500.8,75.5"></polygon>
+            <polygon class="traingle__right" points="1000,0   1000,225   500,225   500,75.5"> </polygon>
+          </svg>
+        </div>
+        <div class="works-main__title">Мои работы</div>
+        <div class="slider">
+          <div class="slider__arrow-prev"></div>
+          <div class="slider__arrow-next"></div>
+          <div class="slider__wrap">
+            <ul class="slider__items">
+              <li class="slider__item">
+                <div class="slider__img"><img src="#" alt="site-foto"></div>
+                <div class="slider__content">
+                  <h4 class="slider__content-title">Сайт школы онлайн образования</h4>
+                  <div class="slider__content-description">HTML, CSS, JavaScript</div><a class="slider__content-link" href="#">Посмотреть сайт</a>
+                </div>
+              </li>
+              <li class="slider__item">
+                <div class="slider__img"><img src="#" alt="site-foto"></div>
+                <div class="slider__content"> 
+                  <h4 class="slider__content-title">Сайт фитнес центра</h4>
+                  <div class="slider__content-description">HTML, CSS, JavaScript</div><a class="slider__content-link" href="#">Посмотреть сайт</a>
+                </div>
+              </li>
+              <li class="slider__item">
+                <div class="slider__img"><img src="#" alt="site-foto"></div>
+                <div class="slider__content">
+                  <h4 class="slider__content-title">Сайт IT Loft</h4>
+                  <div class="slider__content-description">HTML, CSS, JavaScript</div><a class="slider__content-link" href="#">Посмотреть сайт</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="my-feedback">
+          <h3 class="my-feedback__title">Что обо мне говорят</h3>
+          <ul class="my-feedback__comment-wrap">
+            <li class="my-feedback__comment-item">
+              <div class="my-feedback__coment-ava"><img src="#" alt="avatar"></div>
+              <div class="my-feedback__comment-text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+              <div class="my-feedback__comment-name"> 
+                <div class="my-feedback__name">Ковальчук Дмитрий</div>
+                <div class="my-feedback__description">-основатель Loftschool</div>
+              </div>
+            </li>
+            <li class="my-feedback__comment-item">
+              <div class="my-feedback__coment-ava"><img src="#" alt="avatar"></div>
+              <div class="my-feedback__comment-text">Этот код выдержеит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
+              <div class="my-feedback__comment-name"> 
+                <div class="my-feedback__name">Сабанцев Владимир</div>
+                <div class="my-feedback__description">-преподаватель Loftschool</div>
+              </div>
+            </li>
+          </ul>
+          <div class="my-feedback__form">
+            <form action="#" method="post">
+              <h3 class="form__title">Связатся со мной</h3>
+              <input type="text">
+              <input type="text">
+              <textarea name="massage" cols="30" rows="10"></textarea>
+              <button type="submit">Отправить</button>
+              <button type="reset">Очистить </button>
+            </form>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer__content-wrap">
+            <div class="footer__text">
+              <p>Этот сайт я сделал в рамках обучения в Школе <br> онлайн образования LoftSchool.</p>
+            </div>
+            <div class="footer__links">
+              <ul class="footer__nav">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="my-works.html">Мои работы</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="about.html">Обо мне</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="blog.html">Блог</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="index.html">Авторизация</a></li>
+              </ul>
+              <div class="footer__social-wrap">
+                <ul class="social">
+                  <li class="social__link"><a class="social__link-vk" href="#">
+                      <svg class="social__icon-vk">
+                        <use xlink:href="assets/images/sprite.svg#vk"> </use>
+                      </svg></a></li>
+                  <li class="social__link"><a class="social__link-git" href="#">
+                      <svg class="social__icon-git">
+                        <use xlink:href="assets/images/sprite.svg#github"></use>
+                      </svg></a></li>
+                  <li class="social__link"><a class="social__link-in" href="#">
+                      <svg class="social__icon-in">
+                        <use xlink:href="assets/images/sprite.svg#in"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__contact-links">
+              <ul class="footer__contact-wrap">
+                <li class="footer__contact-item"><a class="footer__contact-link" href="#">vankert25</a></li>
+                <li class="footer__contact-item"><a class="footer__contact-link" href="#">vankert353@gmail.com</a></li>
+                <li class="footer__contact-item"><a class="footer__contact-link" href="#">+3 8 093 403 77 67</a></li>
+                <li class="footer__contact-item"><a class="footer__contact-link" href="#">Днепр пр.Героев д. 18</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__copyright">© Владимир Астахов | создано с любовью в LoftSchool | 2018</div>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>

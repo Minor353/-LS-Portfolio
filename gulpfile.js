@@ -5,6 +5,7 @@ const ttf2woff = require('gulp-ttf2woff');
 
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+const sassGlob = require('gulp-sass-glob');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 
@@ -60,6 +61,7 @@ function templates() {
 function styles() {
     return gulp.src('./src/styles/app.scss')
         .pipe(sourcemaps.init())
+        .pipe(sassGlob())
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(sourcemaps.write())
         .pipe(rename({suffix: '.min'}))

@@ -37,7 +37,7 @@ html
                                 svg.social__icon-in
                                     use(xlink:href="assets/images/sprite.svg#in")
                 a(href="#").burger
-                    .burger-btn
+                    .burger__btn
                 .about-title__greeting
                     img(src="assets/images/icons/stars1.svg", alt="stars").about-title__greeting-bg
                     section.greeting
@@ -46,12 +46,14 @@ html
                         .greeting__title
                             h3.greeting__title-name Никитенко Геннадий
                             .greeting__title-text Личный сайт веб разработчика
-                .arrow-btn
+                a(href="#").arrow-btn
+                    svg.social__icon-in
+                        use(xlink:href="assets/images/sprite.svg#arrow_down")
             section.about-main
-                .triangle-wrap
+                .triangle-wrap.triangle-wrap--about
                     svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 125" preserveaspectratio="none").traingle
-                        polygon(points="0,0   0,225   500.8,225   500.8,75.5").left
-                        polygon(points="1000,0   1000,225   500,225   500,75.5").right 
+                        polygon(points="0,0   0,225   500.8,225   500.8,75.5").traingle__left
+                        polygon(points="1000,0   1000,225   500,225   500,75.5").traingle__right 
                 .about-main__left
                     .about-main__left-wrap
                         h3.about-main__left-title ОБО МНЕ
@@ -189,8 +191,7 @@ html
                             li.footer__contact-item
                                 a.footer__contact-link(href="#") Днепр пр.Героев д. 18
                 .footer__copyright © Владимир Астахов | создано с любовью в LoftSchool | 2018
-
-                
+        
 
 
 

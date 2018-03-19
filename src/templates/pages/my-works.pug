@@ -1,0 +1,151 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title #{title}
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel='stylesheet' href='assets/styles/app.min.css')
+        script(src='assets/scripts/bundle.js' defer)
+    body
+        .wrapper
+            nav.nav 
+                ul.nav__wrap
+                    li.nav__item
+                        a(href="my-works.html").nav__link Мои работы
+                    li.nav__item
+                        a(href="about.html").nav__link Обо мне
+                    li.nav__item
+                        a(href="blog.html").nav__link Блог
+                    li.nav__item
+                        a(href="index.html").nav__link Авторизация    
+            section.about-title
+                .about-title__social
+                    ul.social
+                        li.social__link
+                            a.social__link-vk(href="#")
+                                svg.social__icon-vk
+                                    use(xlink:href="assets/images/sprite.svg#vk") 
+                        li.social__link
+                            a.social__link-git(href="#")
+                                svg.social__icon-git
+                                    use(xlink:href="assets/images/sprite.svg#github")
+                        li.social__link
+                            a.social__link-in(href="#")
+                                svg.social__icon-in
+                                    use(xlink:href="assets/images/sprite.svg#in")
+                a(href="#").burger
+                    .burger__btn
+                .about-title__greeting
+                    img(src="assets/images/icons/stars1.svg", alt="stars").about-title__greeting-bg
+                    section.greeting
+                        .greeting__foto
+                            img(src="assets/images/content/ava.jpg", alt="ava")
+                        .greeting__title
+                            h3.greeting__title-name Никитенко Геннадий
+                            .greeting__title-text Личный сайт веб разработчика
+                a(href="#").arrow-btn
+                    svg.social__icon-in
+                        use(xlink:href="assets/images/sprite.svg#arrow_down")
+            section.works-main
+                .triangle-wrap
+                    svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 125" preserveaspectratio="none").traingle.triangle--color
+                        polygon(points="0,0   0,225   500.8,225   500.8,75.5").traingle__left
+                        polygon(points="1000,0   1000,225   500,225   500,75.5").traingle__right 
+                .works-main__title Мои работы
+                .slider
+                    .slider__arrow-prev
+                    .slider__arrow-next
+                    .slider__wrap
+                        ul.slider__items
+                            li.slider__item
+                                .slider__img
+                                    img(src="#", alt="site-foto")
+                                .slider__content
+                                    h4.slider__content-title Сайт школы онлайн образования
+                                    .slider__content-description HTML, CSS, JavaScript
+                                    a(href="#").slider__content-link Посмотреть сайт
+                            li.slider__item
+                                .slider__img
+                                    img(src="#", alt="site-foto")
+                                .slider__content 
+                                    h4.slider__content-title Сайт фитнес центра
+                                    .slider__content-description HTML, CSS, JavaScript
+                                    a(href="#").slider__content-link Посмотреть сайт
+                            li.slider__item
+                                .slider__img
+                                    img(src="#", alt="site-foto")
+                                .slider__content
+                                    h4.slider__content-title Сайт IT Loft
+                                    .slider__content-description HTML, CSS, JavaScript
+                                    a(href="#").slider__content-link Посмотреть сайт
+                section.my-feedback
+                    h3.my-feedback__title Что обо мне говорят
+                    ul.my-feedback__comment-wrap
+                        li.my-feedback__comment-item
+                            .my-feedback__coment-ava
+                                img(src="#", alt="avatar")
+                            .my-feedback__comment-text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                            .my-feedback__comment-name 
+                                .my-feedback__name Ковальчук Дмитрий
+                                .my-feedback__description -основатель Loftschool
+                        li.my-feedback__comment-item
+                            .my-feedback__coment-ava
+                                img(src="#", alt="avatar")
+                            .my-feedback__comment-text Этот код выдержеит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                            .my-feedback__comment-name 
+                                .my-feedback__name Сабанцев Владимир
+                                .my-feedback__description -преподаватель Loftschool
+                    .my-feedback__form
+                        form(action="#", method="post")
+                            h3.form__title Связатся со мной
+                            input(type="text")
+                            input(type="text")
+                            textarea(name="massage", cols="30", rows="10")
+                            button(type="submit") Отправить
+                            button(type="reset") Очистить 
+
+
+
+
+                footer.footer
+                    .footer__content-wrap
+                        .footer__text
+                            p Этот сайт я сделал в рамках обучения в Школе <br> онлайн образования LoftSchool.
+                        .footer__links
+                            ul.footer__nav
+                                li.footer__nav-item
+                                    a(href="my-works.html").footer__nav-link Мои работы
+                                li.footer__nav-item
+                                    a(href="about.html").footer__nav-link Обо мне
+                                li.footer__nav-item
+                                    a(href="blog.html").footer__nav-link Блог
+                                li.footer__nav-item
+                                    a(href="index.html").footer__nav-link Авторизация
+                            .footer__social-wrap
+                                ul.social
+                                    li.social__link
+                                        a.social__link-vk(href="#")
+                                            svg.social__icon-vk
+                                                use(xlink:href="assets/images/sprite.svg#vk") 
+                                    li.social__link
+                                        a.social__link-git(href="#")
+                                            svg.social__icon-git
+                                                use(xlink:href="assets/images/sprite.svg#github")
+                                    li.social__link
+                                        a.social__link-in(href="#")
+                                            svg.social__icon-in
+                                                use(xlink:href="assets/images/sprite.svg#in")
+                        .footer__contact-links
+                            ul.footer__contact-wrap
+                                li.footer__contact-item
+                                    a.footer__contact-link(href="#") vankert25
+                                li.footer__contact-item
+                                    a.footer__contact-link(href="#") vankert353@gmail.com
+                                li.footer__contact-item
+                                    a.footer__contact-link(href="#") +3 8 093 403 77 67
+                                li.footer__contact-item
+                                    a.footer__contact-link(href="#") Днепр пр.Героев д. 18
+                    .footer__copyright © Владимир Астахов | создано с любовью в LoftSchool | 2018

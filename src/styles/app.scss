@@ -1,48 +1,5 @@
-@import "util/normalize.scss";
+@import "util/*.scss";
 
-@import "util/sass-var.scss";
+@import "general/*.scss";
 
-
-@import "general/typography.scss";
-
-@import "general/nav.scss";
-
-@import "general/burger.scss";
-
-@import "general/footer.scss";
-
-@import "general/wrapper.scss";
-
-@import "general/triangle.scss";
-
-
-
-@import "components/autorization.scss";
-
-@import "components/btn-autorization.scss";
-
-@import "components/btn-page.scss";
-
-@import "components/greeting.scss";
-
-@import "components/social.scss";
-
-@import "components/video.scss";
-
-@import "components/wrapper-greeting.scss";
-
-@import "components/index-img.scss";
-
-@import "components/index-wrapper.scss";
-
-@import "components/copywriting.scss";
-
-@import "components/about-title.scss";
-
-@import "components/about-main.scss";
-
-@import "components/circles.scss";
-
-@import "components/about-contact.scss";
-
-@import "components/blog.scss";
+@import "components/*.scss";
