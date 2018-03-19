@@ -22,7 +22,7 @@ html
                     li.nav__item
                         a(href="index.html").nav__link Авторизация    
             section.about-title
-                .about-title__social
+                .social-title
                     ul.social
                         li.social__link
                             a.social__link-vk(href="#")
@@ -46,15 +46,17 @@ html
                         .greeting__title
                             h3.greeting__title-name Никитенко Геннадий
                             .greeting__title-text Личный сайт веб разработчика
-                a(href="#").arrow-btn
+                a(href="#").arrow-btn.arrow-btn--position
                     svg.social__icon-in
                         use(xlink:href="assets/images/sprite.svg#arrow_down")
             section.works-main
-                .triangle-wrap
-                    svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 125" preserveaspectratio="none").traingle.triangle--color
-                        polygon(points="0,0   0,225   500.8,225   500.8,75.5").traingle__left
-                        polygon(points="1000,0   1000,225   500,225   500,75.5").traingle__right 
-                .works-main__title Мои работы
+                .triangle-wrap.triangle-wrap--position
+                    svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 288" preserveaspectratio="none").traingle.triangle--works
+                        polygon(points="0,0   0,288   500.8,288   500.8,85.5").traingle__left
+                        polygon(points="1000,0   1000,288   500,288   500,85.5").traingle__right 
+                .works-main__title-wrap
+                    .works-main__title Мои работы
+                        svg(x="0px" y="0px" width="171.5px" height="132.5px" viewBox="0 0 171.5 132.5" enable-background="new 0 0 171.5 132.5" xml:space="preserve").about-main__left-title-bg
                 .slider
                     .slider__arrow-prev
                     .slider__arrow-next

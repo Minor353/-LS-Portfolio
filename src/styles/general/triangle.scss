@@ -10,7 +10,7 @@
 .traingle {
     display: block;
     width: 100%;
-    height: 225px;
+    height: 235px;
 
     &__left {
         fill: #f2f0e8;
@@ -21,7 +21,10 @@
     }
 }
 
-
+.triangle-wrap--position {
+    top: -304px;
+    
+}
 
 .triangle--color {
     .traingle__left{
@@ -30,5 +33,19 @@
     
     .traingle__right{
         fill: #faf8f0;
+    }
+}
+
+
+.triangle--works {
+    height: 288px;
+    .traingle__left{
+        fill: rgba($color: #151a29, $alpha: .9);
+        stroke: transparent;
+    }
+    
+    .traingle__right{
+        fill: rgba($color: #151a29, $alpha: .9);
+        stroke: transparent;
     }
 }

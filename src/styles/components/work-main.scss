@@ -1,3 +1,20 @@
 .works-main {
     position: relative;
 }
+
+.works-main__title {
+    font-family: 'Sansus-Webissimo-Regular';
+    font-weight: 300;
+    font-size: 63px;
+    text-transform: uppercase;
+    color: $white;
+    position: relative; 
+}
+
+.works-main__title-wrap {
+    position: absolute;
+    top: -128px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 40;
+}
