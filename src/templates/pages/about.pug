@@ -11,16 +11,16 @@ html
         script(src='assets/scripts/bundle.js' defer)
     body
         .wrapper
-            nav.nav 
-                ul.nav__wrap
-                    li.nav__item
-                        a(href="my-works.html").nav__link Мои работы
-                    li.nav__item
-                        a(href="about.html").nav__link Обо мне
-                    li.nav__item
-                        a(href="blog.html").nav__link Блог
-                    li.nav__item
-                        a(href="index.html").nav__link Авторизация    
+            nav.nav.nav-panel 
+                ul.nav-panel__items-wrapper
+                    li.nav-panel__item
+                        a(href="my-works.html").nav-panel__item-link Мои работы
+                    li.nav-panel__item
+                        a(href="about.html").nav-panel__item-link Обо мне
+                    li.nav-panel__item
+                        a(href="blog.html").nav-panel__item-link Блог
+                    li.nav-panel__item
+                        a(href="index.html").nav-panel__item-link Авторизация    
             section.about-title
                 .social-title
                     ul.social
@@ -81,49 +81,59 @@ html
                         .about-main__frontend
                             h5 Frontend
                             ul.about-main__frontend-wrap
-                                li.about-main__frontend-item
+                                li.about-main__item
+                                    span.about-main__item-title HTML5
                                     svg(viewBox='0 0 110 110').circles
                                         circle(r="45" cx="50%" cy="50%" fill="none").circle__first
                                         circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15 
-                                li.about-main__frontend-item
+                                li.about-main__item
+                                    span.about-main__item-title CSS3
                                     svg(viewBox='0 0 110 110').circles
                                         circle(r="45" cx="50%" cy="50%" fill="none").circle__first
                                         circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-25 
-                                li.about-main__frontend-item
+                                li.about-main__item
+                                    span.about-main__item-title JavaScript<br>& jQwery
                                     svg(viewBox='0 0 110 110').circles
                                         circle(r="45" cx="50%" cy="50%" fill="none").circle__first
                                         circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-55 
                         .about-main__backend
                             h5 Backend
                             ul.about-main__frontend-wrap
-                                li.about-main__frontend-item
+                                li.about-main__item
+                                    span.about-main__item-title PHP
                                     svg(viewBox='0 0 110 110').circles
                                         circle(r="45" cx="50%" cy="50%" fill="none").circle__first
                                         circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15 
-                                li.about-main__frontend-item
+                                li.about-main__item
+                                    span.about-main__item-title mySQL
                                     svg(viewBox='0 0 110 110').circles
                                         circle(r="45" cx="50%" cy="50%" fill="none").circle__first
                                         circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15 
-                                li.about-main__frontend-item
+                                li.about-main__item
+                                    span.about-main__item-title Node.js<br>& npm
                                     svg(viewBox='0 0 110 110').circles
                                         circle(r="45" cx="50%" cy="50%" fill="none").circle__first
                                         circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15
-                                li.about-main__frontend-item
+                                li.about-main__item
+                                    span.about-main__item-title Mongo.db
                                     svg(viewBox='0 0 110 110').circles
                                         circle(r="45" cx="50%" cy="50%" fill="none").circle__first
                                         circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15
                         .about-main__workflow
                             h5 WorkFlow
                             ul.about-main__frontend-wrap
-                                li.about-main__frontend-item
+                                li.about-main__item
+                                    span.about-main__item-title Git
                                     svg(viewBox='0 0 110 110').circles
                                         circle(r="45" cx="50%" cy="50%" fill="none").circle__first
                                         circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15 
-                                li.about-main__frontend-item
+                                li.about-main__item
+                                    span.about-main__item-title Gulp
                                     svg(viewBox='0 0 110 110').circles
                                         circle(r="45" cx="50%" cy="50%" fill="none").circle__first
                                         circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15 
-                                li.about-main__frontend-item
+                                li.about-main__item
+                                    span.about-main__item-title Bower
                                     svg(viewBox='0 0 110 110').circles
                                         circle(r="45" cx="50%" cy="50%" fill="none").circle__first
                                         circle(r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)").circle__second.circle-15
@@ -170,15 +180,15 @@ html
                             ul.social
                                 li.social__link
                                     a.social__link-vk(href="#")
-                                        svg.social__icon-vk
+                                        svg.social__icon-vk.social__icon--color
                                             use(xlink:href="assets/images/sprite.svg#vk") 
                                 li.social__link
                                     a.social__link-git(href="#")
-                                        svg.social__icon-git
+                                        svg.social__icon-git.social__icon--color
                                             use(xlink:href="assets/images/sprite.svg#github")
                                 li.social__link
                                     a.social__link-in(href="#")
-                                        svg.social__icon-in
+                                        svg.social__icon-in.social__icon--color
                                             use(xlink:href="assets/images/sprite.svg#in")
                     .footer__contact-links
                         ul.footer__contact-wrap
@@ -191,6 +201,20 @@ html
                             li.footer__contact-item
                                 a.footer__contact-link(href="#") Днепр пр.Героев д. 18
                 .footer__copyright © Владимир Астахов | создано с любовью в LoftSchool | 2018
+        script.
+            function initMap() {
+                var myMap = {lat: 48.415578, lng: 35.05997};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 10,
+                    center: myMap
+                });
+                var marker = new google.maps.Marker({
+                    position: myMap,
+                    map: map
+                });
+            }
+        script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuLjb-iV3X_4aUsa2TbUyXn4NxU_RdUv4&callback=initMap")
+            
         
 
 

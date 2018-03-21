@@ -133,11 +133,28 @@
     padding: 0;
 }
 
-.about-main__frontend-item {
+
+
+.about-main__item {
+    display: inline-block;
+    width: 108px;
+    height: 108px;
     margin-right: 35px;
     margin-bottom: 35px;
+    position: relative;
+  }
+
+.about-main__item:last-child {
+    margin-right: 0;
 }
 
-.about-main__frontend-item:last-child {
-    margin-right: 0;
+.about-main__item-title {
+    font-family: 'Roboto-Medium';
+    font-weight: 500;
+    font-size: 12px;
+    color: $blue;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }

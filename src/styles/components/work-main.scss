@@ -11,9 +11,18 @@
     position: relative; 
 }
 
+.works-main__title-bg {
+    transform: rotate(190deg);
+    position: absolute;
+    top: -42px;
+    left: 12px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
 .works-main__title-wrap {
     position: absolute;
-    top: -128px;
+    top: -108px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 40;

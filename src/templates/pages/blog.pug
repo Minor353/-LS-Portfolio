@@ -11,18 +11,18 @@ html
         script(src='assets/scripts/bundle.js' defer)
     body
         .wrapper
-            nav.nav 
-                ul.nav__wrap
-                    li.nav__item
-                        a(href="my-works.html").nav__link Мои работы
-                    li.nav__item
-                        a(href="about.html").nav__link Обо мне
-                    li.nav__item
-                        a(href="blog.html").nav__link Блог
-                    li.nav__item
-                        a(href="index.html").nav__link Авторизация    
+            nav.nav.nav-panel 
+                ul.nav-panel__items-wrapper
+                    li.nav-panel__item
+                        a(href="my-works.html").nav-panel__item-link Мои работы
+                    li.nav-panel__item
+                        a(href="about.html").nav-panel__item-link Обо мне
+                    li.nav-panel__item
+                        a(href="blog.html").nav-panel__item-link Блог
+                    li.nav-panel__item
+                        a(href="index.html").nav-panel__item-link Авторизация    
             section.about-title
-                .about-title__social
+                .social-title
                     ul.social
                         li.social__link
                             a.social__link-vk(href="#")
@@ -37,7 +37,7 @@ html
                                 svg.social__icon-in
                                     use(xlink:href="assets/images/sprite.svg#in")
                 a(href="#").burger
-                    .burger-btn
+                    .burger__btn
                 .about-title__greeting
                     img(src="assets/images/icons/stars1.svg", alt="stars").about-title__greeting-bg
                     section.greeting
@@ -86,15 +86,15 @@ html
                             ul.social
                                 li.social__link
                                     a.social__link-vk(href="#")
-                                        svg.social__icon-vk
+                                        svg.social__icon-vk.social__icon--color
                                             use(xlink:href="assets/images/sprite.svg#vk") 
                                 li.social__link
                                     a.social__link-git(href="#")
-                                        svg.social__icon-git
+                                        svg.social__icon-git.social__icon--color
                                             use(xlink:href="assets/images/sprite.svg#github")
                                 li.social__link
                                     a.social__link-in(href="#")
-                                        svg.social__icon-in
+                                        svg.social__icon-in.social__icon--color
                                             use(xlink:href="assets/images/sprite.svg#in")
                     .footer__contact-links
                         ul.footer__contact-wrap

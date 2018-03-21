@@ -1,0 +1,64 @@
+.form {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 380px;
+    //padding: 0 20px;
+    background-color: rgba($color: #242122, $alpha: .5);
+}
+
+.form__title {
+    font-family: 'Sansus-Webissimo-Regular';
+    font-weight: 300;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+}
+
+.form__field {
+    background-color: rgba($color: $grey, $alpha: .3);
+    border: transparent;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    color: #acadad;
+    padding: 15px 15px;
+}
+
+.form__area {
+    background-color: rgba($color: $grey, $alpha: .3);
+    border: transparent;
+    font-family: 'Roboto-Regular';
+    font-weight: 300;
+    font-size: 16px;
+    color: #acadad;
+    padding: 15px 15px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    height: 130px;
+    resize: none;
+}
+
+.form__btn-wrap {
+    width: 100%;
+    display: flex;
+}
+
+.form__btn {
+    width: 50%;
+    padding: 15px 0;
+    border: none;
+    font-family: 'Roboto-Medium';
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.form__btn-submit {
+    background-color: $blue;
+    color: $white;
+}
+
+.form__btn-reset {
+    background-color: transparent;
+    color: $grey;
+}

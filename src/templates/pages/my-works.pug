@@ -11,16 +11,16 @@ html
         script(src='assets/scripts/bundle.js' defer)
     body
         .wrapper
-            nav.nav 
-                ul.nav__wrap
-                    li.nav__item
-                        a(href="my-works.html").nav__link Мои работы
-                    li.nav__item
-                        a(href="about.html").nav__link Обо мне
-                    li.nav__item
-                        a(href="blog.html").nav__link Блог
-                    li.nav__item
-                        a(href="index.html").nav__link Авторизация    
+            nav.nav.nav-panel 
+                ul.nav-panel__items-wrapper
+                    li.nav-panel__item
+                        a(href="my-works.html").nav-panel__item-link Мои работы
+                    li.nav-panel__item
+                        a(href="about.html").nav-panel__item-link Обо мне
+                    li.nav-panel__item
+                        a(href="blog.html").nav-panel__item-link Блог
+                    li.nav-panel__item
+                        a(href="index.html").nav-panel__item-link Авторизация    
             section.about-title
                 .social-title
                     ul.social
@@ -56,7 +56,16 @@ html
                         polygon(points="1000,0   1000,288   500,288   500,85.5").traingle__right 
                 .works-main__title-wrap
                     .works-main__title Мои работы
-                        svg(x="0px" y="0px" width="171.5px" height="132.5px" viewBox="0 0 171.5 132.5" enable-background="new 0 0 171.5 132.5" xml:space="preserve").about-main__left-title-bg
+                         svg(x="0px" y="0px" width="277.5px" height="168.5px" viewBox="0 0 171.5 132.5" enable-background="new 0 0 171.5 132.5" xml:space="preserve").works-main__title-bg
+                                <circle fill="#dbe0e6" cx="4.25" cy="92.25" r="4.25"/>
+                                <circle fill="#dbe0e6" cx="48.25" cy="128.25" r="4.25"/>
+                                <circle fill="#dbe0e6" cx="72.75" cy="52.75" r="4.75"/>
+                                <circle fill="#dbe0e6" cx="8.25" cy="22.25" r="4.25"/>
+                                <circle fill="#dbe0e6" cx="117.25" cy="96.25" r="2.75"/>
+                                <circle fill="#dbe0e6" cx="126.25" cy="41.25" r="1.911"/>
+                                <circle fill="#dbe0e6" cx="167.25" cy="4.25" r="4.25"/>
+                                <polyline fill="none" stroke="#dbe0e6" stroke-miterlimit="10" points="72.75,52.75 117.25,96.25 4.25,92.25 48.25,128.25 117.25,96.25 167.25,4.25 126.25,41.25 72.75,54.334 8.25,22.25 "/>
+                                <line fill="none" stroke="#dbe0e6" stroke-miterlimit="10" x1="48.25" y1="131.334" x2="8.5" y2="24.339"/>
                 .slider
                     .slider__arrow-prev
                     .slider__arrow-next
@@ -64,52 +73,78 @@ html
                         ul.slider__items
                             li.slider__item
                                 .slider__img
-                                    img(src="#", alt="site-foto")
+                                    img(src="assets/images/content/work-1.png", alt="site-foto")
                                 .slider__content
                                     h4.slider__content-title Сайт школы онлайн образования
                                     .slider__content-description HTML, CSS, JavaScript
                                     a(href="#").slider__content-link Посмотреть сайт
+                                        svg.slider__link-icon
+                                            use(xlink:href="assets/images/sprite.svg#link")
                             li.slider__item
                                 .slider__img
-                                    img(src="#", alt="site-foto")
+                                    img(src="assets/images/content/work-2.png", alt="site-foto")
                                 .slider__content 
                                     h4.slider__content-title Сайт фитнес центра
                                     .slider__content-description HTML, CSS, JavaScript
                                     a(href="#").slider__content-link Посмотреть сайт
+                                        svg.slider__link-icon
+                                            use(xlink:href="assets/images/sprite.svg#link")
                             li.slider__item
                                 .slider__img
-                                    img(src="#", alt="site-foto")
+                                    img(src="assets/images/content/work-3.png", alt="site-foto")
                                 .slider__content
                                     h4.slider__content-title Сайт IT Loft
                                     .slider__content-description HTML, CSS, JavaScript
                                     a(href="#").slider__content-link Посмотреть сайт
+                                        svg.slider__link-icon
+                                            use(xlink:href="assets/images/sprite.svg#link")
+                    .slider__paginator
+                        .slider__paginator-item.slider__paginator-item--active
+                        .slider__paginator-item
+                        .slider__paginator-item
                 section.my-feedback
                     h3.my-feedback__title Что обо мне говорят
+                        svg(x="0px" y="0px" width="180.03px" height="205.03px" viewBox="0 0 103.03 124.03" enable-background="new 0 0 103.03 124.03" xml:space="preserve").my-feedback__title-bg
+                            <circle fill="#FFFFFF" cx="5.182" cy="60.182" r="5.182"/>
+                            <circle fill="#FFFFFF" cx="50.182" cy="5.182" r="5.182"/>
+                            <circle fill="#FFFFFF" cx="31.182" cy="121.182" r="2.848"/>
+                            <circle fill="#FFFFFF" cx="65.182" cy="55.182" r="2.848"/>
+                            <circle fill="#FFFFFF" cx="100.182" cy="49.182" r="2.848"/>
+                            <circle fill="#FFFFFF" cx="94.182" cy="104.182" r="2.848"/>
+                            <polygon fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" points="50.183,5.182 5.183,60.182 31.183,121.183 "/>
+                            <polygon fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" points="100.183,49.182 50.183,5.182 5.183,60.182 94.183,104.612 "/>
+                            <line fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" x1="65.183" y1="55.182" x2="31.183" y2="121.183"/>
                     ul.my-feedback__comment-wrap
                         li.my-feedback__comment-item
                             .my-feedback__coment-ava
-                                img(src="#", alt="avatar")
+                                img(src="assets/images/content/dima.png", alt="avatar")
                             .my-feedback__comment-text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                                .my-feedback__comment-bg
                             .my-feedback__comment-name 
                                 .my-feedback__name Ковальчук Дмитрий
-                                .my-feedback__description -основатель Loftschool
+                                .my-feedback__description - основатель Loftschool
                         li.my-feedback__comment-item
                             .my-feedback__coment-ava
-                                img(src="#", alt="avatar")
+                                img(src="assets/images/content/vova.png", alt="avatar")
                             .my-feedback__comment-text Этот код выдержеит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                                .my-feedback__comment-bg
                             .my-feedback__comment-name 
                                 .my-feedback__name Сабанцев Владимир
-                                .my-feedback__description -преподаватель Loftschool
+                                .my-feedback__description - преподаватель Loftschool
                     .my-feedback__form
-                        form(action="#", method="post")
+                        form(action="#", method="post").form
                             h3.form__title Связатся со мной
-                            input(type="text")
-                            input(type="text")
-                            textarea(name="massage", cols="30", rows="10")
-                            button(type="submit") Отправить
-                            button(type="reset") Очистить 
+                            input(type="text" required placeholder="Ваше имя").form__field
+                            input(type="text" required placeholder="Ваш email").form__field
+                            textarea(name="massage" required placeholder="Ваше сообщение").form__area
+                            .form__btn-wrap
+                                button(type="submit").form__btn.form__btn-submit Отправить
+                                button(type="reset").form__btn.form__btn-reset Очистить 
 
 
+                a(href="#").arrow-btn.arrow-btn--up
+                    svg.arrow
+                        use(xlink:href="assets/images/sprite.svg#arrow_down")
 
 
                 footer.footer
@@ -130,15 +165,15 @@ html
                                 ul.social
                                     li.social__link
                                         a.social__link-vk(href="#")
-                                            svg.social__icon-vk
+                                            svg.social__icon-vk.social__icon--color
                                                 use(xlink:href="assets/images/sprite.svg#vk") 
                                     li.social__link
                                         a.social__link-git(href="#")
-                                            svg.social__icon-git
+                                            svg.social__icon-git.social__icon--color
                                                 use(xlink:href="assets/images/sprite.svg#github")
                                     li.social__link
                                         a.social__link-in(href="#")
-                                            svg.social__icon-in
+                                            svg.social__icon-in.social__icon--color
                                                 use(xlink:href="assets/images/sprite.svg#in")
                         .footer__contact-links
                             ul.footer__contact-wrap

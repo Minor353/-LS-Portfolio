@@ -1,5 +1,5 @@
 .footer {
-    background-color: rgba($color: $black, $alpha: .8);
+    background-color: rgba($color: #1b1e28, $alpha: .8);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -22,7 +22,7 @@
         font-weight: 100;
         font-size: 16px;
         line-height: 24px; 
-        color: $white;
+        color: rgba($color: $white, $alpha: .6);
     }
 }
 
@@ -54,6 +54,11 @@
 .footer__contact-links {
     width: 33%;
     height: 100px;
+    font-family: 'Roboto-Light';
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba($color: $white, $alpha: .6);
 }
 
 .footer__contact-wrap {

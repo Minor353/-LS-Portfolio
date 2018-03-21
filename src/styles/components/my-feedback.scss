@@ -1,0 +1,105 @@
+.my-feedback {
+    background-image: url('../images/content/feedback-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 330px;
+}
+
+.my-feedback__title {
+    font-family: 'Sansus-Webissimo-Regular';
+    font-weight: 300;
+    font-size: 63px;
+    color: $white;
+    text-transform: uppercase;
+    width: 380px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 67px;
+    position: relative;
+}
+
+.my-feedback__title-bg {
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    opacity: .2;
+    transform: rotate(25deg);
+}
+
+.my-feedback__comment-wrap {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    
+}
+
+.my-feedback__comment-item {
+    width: 394px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-feedback__coment-ava {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.my-feedback__comment-text {
+    font-family: 'Roboto-Italic';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: $white;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.my-feedback__comment-bg {
+    position: absolute;
+    left: 0;
+    top: -38px;
+    height: 80px;
+    width: 100px;
+    background-image: url('../images/content/comma.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.my-feedback__comment-name {
+    text-align: center;
+}
+
+.my-feedback__name {
+    font-family: 'Roboto-BoldItalic';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+}
+
+.my-feedback__description {
+    font-family: 'Roboto-Italic';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+}
+
+.my-feedback__form {
+    display: flex;
+}

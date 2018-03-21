@@ -1,6 +1,6 @@
 .triangle-wrap {
     position: absolute;
-    top: -147px;
+    top: -156px;
     left: 0;
     right: 0;
     width: 100%;
@@ -22,7 +22,7 @@
 }
 
 .triangle-wrap--position {
-    top: -304px;
+    top: -288px;
     
 }
 
@@ -49,3 +49,22 @@
         stroke: transparent;
     }
 }
+
+.slider__paginator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+
+    &-item {
+        width: 5px;
+        height: 5px;
+        border: 2px solid $blue;
+        border-radius: 50%;
+        margin: 0 10px;
+        &--active {
+            background-color: $blue;
+        }
+    }
+}
+
