@@ -15,7 +15,12 @@
     text-decoration: none; 
     padding: 17px 30px;
     background-color: $blue;
+    transition: 0.3s;
     border-right: 2px solid rgba($color: $white, $alpha: 0.4);
+    &:hover {
+        background-color: $navi;
+        transition: 0.3s;
+    }
 }
 
 .btn-page__item:last-child {

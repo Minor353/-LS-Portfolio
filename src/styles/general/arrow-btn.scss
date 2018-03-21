@@ -7,9 +7,14 @@
 } 
 
 .arrow {
-    fill: $white;
+    fill: #bcc5d2;
+    transition: .3s;
     width: 25px;
     height: 25px;
+    &:hover {
+        fill: $white;
+        transition: .3s;
+    }
 }
 
 .arrow-btn--position {

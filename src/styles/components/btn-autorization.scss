@@ -4,7 +4,15 @@
     text-decoration: none;
     padding: 13px 25px;
     border: 2px solid $white;
+    transition: 0.4s;
     position: absolute;
     right: 20px;
     top: 20px;
+    z-index: 56;
+
+    &:hover {
+        border-color: $navi;
+        background-color: $navi;
+        transition: 0.4s;
+    }
 }

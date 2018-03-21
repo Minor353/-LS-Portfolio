@@ -25,24 +25,37 @@
 
 .social__icon-vk {
     fill: $white;
+    transition: .4s;
     width: 30px;
     height: 30px; 
 }
 
 .social__icon-git {
     fill: $white;
+    transition: .4s;
     width: 25px;
     height: 25px;
 }
 
 .social__icon-in {
     fill: $white;
+    transition: .4s;
     width: 25px;
     height: 25px;
 }
 
+.social__icon:hover {
+    fill: #004cd0;
+    transition: .4s;
+}
+
 .social__icon-index {
     fill: $blue;
+    transition: 0.4s;
+    &:hover {
+        fill: $white;
+        transition: 0.4s;
+    }
 }
 
 .social__icon--color {

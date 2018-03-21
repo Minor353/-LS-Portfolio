@@ -26,15 +26,15 @@ html
                     ul.social
                         li.social__link
                             a.social__link-vk(href="#")
-                                svg.social__icon-vk
+                                svg.social__icon.social__icon-vk
                                     use(xlink:href="assets/images/sprite.svg#vk") 
                         li.social__link
                             a.social__link-git(href="#")
-                                svg.social__icon-git
+                                svg.social__icon.social__icon-git
                                     use(xlink:href="assets/images/sprite.svg#github")
                         li.social__link
                             a.social__link-in(href="#")
-                                svg.social__icon-in
+                                svg.social__icon.social__icon-in
                                     use(xlink:href="assets/images/sprite.svg#in")
                 a(href="#").burger
                     .burger__btn
@@ -47,7 +47,7 @@ html
                             h3.greeting__title-name Никитенко Геннадий
                             .greeting__title-text Личный сайт веб разработчика
                 a(href="#").arrow-btn.arrow-btn--position
-                    svg.social__icon-in
+                    svg.arrow
                         use(xlink:href="assets/images/sprite.svg#arrow_down")
             section.works-main
                 .triangle-wrap.triangle-wrap--position
@@ -67,8 +67,8 @@ html
                                 <polyline fill="none" stroke="#dbe0e6" stroke-miterlimit="10" points="72.75,52.75 117.25,96.25 4.25,92.25 48.25,128.25 117.25,96.25 167.25,4.25 126.25,41.25 72.75,54.334 8.25,22.25 "/>
                                 <line fill="none" stroke="#dbe0e6" stroke-miterlimit="10" x1="48.25" y1="131.334" x2="8.5" y2="24.339"/>
                 .slider
-                    .slider__arrow-prev
-                    .slider__arrow-next
+                    a(href="#").slider__arrow-prev
+                    a(href="#").slider__arrow-next
                     .slider__wrap
                         ul.slider__items
                             li.slider__item
@@ -99,9 +99,9 @@ html
                                         svg.slider__link-icon
                                             use(xlink:href="assets/images/sprite.svg#link")
                     .slider__paginator
-                        .slider__paginator-item.slider__paginator-item--active
-                        .slider__paginator-item
-                        .slider__paginator-item
+                        a(href="#").slider__paginator-item.slider__paginator-item--active
+                        a(href="#").slider__paginator-item
+                        a(href="#").slider__paginator-item 
                 section.my-feedback
                     h3.my-feedback__title Что обо мне говорят
                         svg(x="0px" y="0px" width="180.03px" height="205.03px" viewBox="0 0 103.03 124.03" enable-background="new 0 0 103.03 124.03" xml:space="preserve").my-feedback__title-bg
@@ -165,15 +165,15 @@ html
                                 ul.social
                                     li.social__link
                                         a.social__link-vk(href="#")
-                                            svg.social__icon-vk.social__icon--color
+                                            svg.social__icon.social__icon-vk.social__icon--color
                                                 use(xlink:href="assets/images/sprite.svg#vk") 
                                     li.social__link
                                         a.social__link-git(href="#")
-                                            svg.social__icon-git.social__icon--color
+                                            svg.social__icon.social__icon-git.social__icon--color
                                                 use(xlink:href="assets/images/sprite.svg#github")
                                     li.social__link
                                         a.social__link-in(href="#")
-                                            svg.social__icon-in.social__icon--color
+                                            svg.social__icon.social__icon-in.social__icon--color
                                                 use(xlink:href="assets/images/sprite.svg#in")
                         .footer__contact-links
                             ul.footer__contact-wrap
