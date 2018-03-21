@@ -1,15 +1,7 @@
-doctype html
-html
-    head
-        meta(charset="utf-8")
-        title #{title}
-        meta(content="" name="description")
-        meta(content="" name="keywords")
-        meta(content="width=device-width, initial-scale=1" name="viewport")
-        meta(content="ie=edge" http-equiv="x-ua-compatible")
-        link(rel='stylesheet' href='assets/styles/app.min.css')
-        script(src='assets/scripts/bundle.js' defer)
-    body
+extends ../includes/g_head
+block variables
+  - var title = 'My Portfolio'
+block content 
         .wrapper
             .index-wrapper
                 .video
@@ -66,8 +58,3 @@ html
                                     button(type="reset").autorization__btn На главную
                                     button(type="submit").autorization__btn Войти
                 .copywriting © Владимир Астахов | создано с любовью в LoftSchool | 2018
-                .index-img
-        
-
-
-    
