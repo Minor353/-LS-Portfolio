@@ -10,6 +10,10 @@
 
 .blog__section-left {
     width: 30%;
+    @include tablet(){
+        position: absolute;
+        left: -33%;
+    }
 }
 
 .blog__title-wrap {
@@ -34,6 +38,10 @@
 .blog__section-right {
     width: 55%;
     padding-left: 100px; 
+    @include tablet(){
+        width: 100%;
+        padding: 0 25px;
+    }
 }
 
 .blog__article-wrap {

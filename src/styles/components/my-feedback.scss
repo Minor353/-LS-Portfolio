@@ -18,6 +18,9 @@
     margin: 0 auto;
     margin-bottom: 67px;
     position: relative;
+    @include tablet(){
+        font-size: 49px;
+    }
 }
 
 .my-feedback__title-bg {
@@ -36,7 +39,11 @@
     display: flex;
     justify-content: space-between;
     width: 60%;
-    
+    @include tablet(){
+        width: 100%;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
 }
 
 .my-feedback__comment-item {
@@ -44,6 +51,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include tablet(){
+        width: 49%;
+    }
 }
 
 .my-feedback__coment-ava {
@@ -66,6 +76,9 @@
     color: $white;
     margin-bottom: 25px;
     position: relative;
+    @include tablet(){
+        font-size: 14px;
+    }
 }
 
 .my-feedback__comment-bg {

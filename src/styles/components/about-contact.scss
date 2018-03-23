@@ -19,6 +19,9 @@
     width: 580px;
     padding: 30px 20px;
     background-color: rgba($color: $white, $alpha: .7);
+    @include tablet(){
+        width: 348px;
+    }
 }
 
 .contact__content-title {
@@ -27,6 +30,9 @@
     font-size: 35px;
     color: $grey;
     margin: 0;
+    @include tablet(){
+        text-align: center;
+    }
 }
 
 .contact__link-img {
@@ -41,6 +47,10 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    @include tablet(){
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
 
 .contact__content-link {
@@ -57,4 +67,9 @@
     width: 50%;
     margin: 0 auto;
     margin-bottom: 25px;
+    @include tablet(){
+        width: 100%;
+        margin: 0;
+        margin-bottom: 25px;
+    }
 }

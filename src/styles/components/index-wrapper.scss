@@ -1,4 +1,10 @@
 .index-wrapper {
     height: 100vh;
     position: relative;
+    @include tablet() {
+        background-image: url('../images/content/index-bg-mob.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }

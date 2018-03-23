@@ -1,6 +1,6 @@
 .triangle-wrap {
     position: absolute;
-    top: -156px;
+    top: -165px;
     left: 0;
     right: 0;
     width: 100%;
@@ -18,6 +18,14 @@
 
     &__right {
         fill: #f4f5f0;
+    }
+}
+
+.triangle-wrap--about {
+    @include tablet(){
+        .traingle__right {
+           fill: #f2f0e8;
+        }
     }
 }
 

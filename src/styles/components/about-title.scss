@@ -1,6 +1,9 @@
 .about-title {
     height: 100vh;
     background-image: url('../images/content/top-bg.png');
+    @include tablet(){
+        background-image: url('../images/content/index-bg-mob.png');
+    }
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -14,7 +17,9 @@
 
 .about-title__greeting {
     position: relative;
-    
+    @include tablet(){
+        margin-top: 25%; 
+    }
     .greeting {
         display: flex;
         flex-direction: column;

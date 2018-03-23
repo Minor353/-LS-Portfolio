@@ -8,4 +8,8 @@
     background-position: top;
     background-size: 130%;
     z-index: -1;
+    @include tablet() {
+        //height: 210px;
+        display: none;
+    }
 }

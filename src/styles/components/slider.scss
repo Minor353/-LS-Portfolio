@@ -61,12 +61,20 @@
     height: 100%;
     display: flex;
     align-items: flex-end;
+    @include tablet(){
+        flex-direction: column-reverse;
+    }
 }
 
 .slider__img {
     width: 50%;
     height: 85%;
     margin-right: 80px;
+    @include tablet(){
+        height: 65%;
+        width: 90%;
+        margin: 0 auto;
+    }
     img {
         width: 100%;
         height: 100%;;
@@ -76,6 +84,9 @@
 
 .slider__content {
     margin: auto;
+    @include tablet(){
+        text-align: center;
+    }
     &-title {
         position: relative;
         font-family: 'Sansus-Webissimo-Regular';
@@ -93,6 +104,10 @@
             position: absolute;
             left: 0;
             bottom: 0;
+            @include tablet(){
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
 

@@ -4,6 +4,9 @@
     bottom: 45px;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include tablet(){
+        bottom: 100px;
+    }
 } 
 
 .arrow {
@@ -24,4 +27,7 @@
 .arrow-btn--up {
     bottom: 227px;
     transform: rotate(180deg);
+    @include tablet(){
+        bottom: 264px;
+    }
 }

@@ -1,6 +1,7 @@
 .wrapper-greeting {
     perspective: 1000px;
     border: 1px solid transparent;
+    z-index: 77;
 }
 
 .wrapper-greeting__rotate {
@@ -13,6 +14,9 @@
     height: 390px;
     margin: auto;
     margin-top: 8%;
+    @include tablet() {
+        margin-top: 35%;
+    }
 }
 
 /*.wrapper-greeting__rotate:hover {
