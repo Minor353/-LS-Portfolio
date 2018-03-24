@@ -6,6 +6,7 @@
     border: 2px solid $white;
     transition: 0.4s;
     position: absolute;
+    text-align: center;
     right: 20px;
     top: 20px;
     z-index: 56;
@@ -17,5 +18,11 @@
         border-color: $navi;
         background-color: $navi;
         transition: 0.4s;
+    }
+
+    @include mobile(){
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

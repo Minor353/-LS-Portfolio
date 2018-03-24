@@ -3,6 +3,10 @@
     top: 22px;
     right: 30px;
     padding: 12px 0;
+    @include mobile(){
+        top: 10px;
+        right: 10px;
+    }
 
     &__btn {
         width: 40px;

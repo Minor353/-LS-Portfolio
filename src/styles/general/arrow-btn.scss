@@ -4,8 +4,8 @@
     bottom: 45px;
     left: 50%;
     transform: translate(-50%, -50%);
-    @include tablet(){
-        bottom: 100px;
+    @include mobile(){
+        bottom: 120px;
     }
 } 
 
@@ -21,7 +21,13 @@
 }
 
 .arrow-btn--position {
-    bottom: 204px;
+    bottom: 225px;
+    @include tablet(){
+        bottom: 245px;
+    }
+    @include mobile(){
+        bottom: 100px;
+    }
 }
 
 .arrow-btn--up {
@@ -29,5 +35,8 @@
     transform: rotate(180deg);
     @include tablet(){
         bottom: 264px;
+    }
+    @include mobile(){
+        bottom: 355px;
     }
 }

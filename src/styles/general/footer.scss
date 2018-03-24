@@ -14,6 +14,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    @include mobile(){
+        padding: 10px;
+        margin-bottom: 5px;
+    }
 }
 
 .footer__text {
@@ -28,6 +32,9 @@
         text-align: center;
         border-bottom: 1px solid rgba($color: $white, $alpha: .3);
     }
+    @include mobile(){
+        padding-bottom: 10px;
+    }
     p {
         margin: 0;
         font-family: 'Roboto-Light';
@@ -35,6 +42,9 @@
         font-size: 16px;
         line-height: 24px; 
         color: rgba($color: $white, $alpha: .6);
+        @include mobile(){
+            font-size: 14px;
+        }
     }
 }
 
@@ -43,11 +53,18 @@
     height: 100px;
     padding-left: 27px;
     padding-right: 27px;
+    margin-right: 25px;
     border-right: 1px solid rgba($color: $white, $alpha: .3);
     @include tablet(){
         width: 52%;
         padding: 0;
         border-right: none;
+        margin-right: 0;
+    }
+    @include mobile(){
+        width: 100%;
+        border-bottom: 1px solid rgba($color: $white, $alpha: .3);
+        height: 78px;
     }
 }
 
@@ -56,10 +73,17 @@
     padding: 0;
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 40px;
     @include tablet(){
         margin-bottom: 15px;
+        justify-content: space-between;
+    }
+}
+
+.footer__nav-item {
+    margin-right: 20px;
+    @include tablet(){
+        margin-right: 0; 
     }
 }
 
@@ -93,6 +117,11 @@
         text-align: right;
         width: 30%;
     }
+    @include mobile(){
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
 }
 
 .footer__contact-wrap {
@@ -120,4 +149,9 @@
     font-weight: 100;
     font-size: 16px;
     padding: 5px 0;
+    @include mobile(){
+        text-align: center;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }

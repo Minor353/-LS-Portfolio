@@ -5,6 +5,9 @@
     width: 380px;
     //padding: 0 20px;
     background-color: rgba($color: #242122, $alpha: .5);
+    @include mobile(){
+        width: 300px;
+    }
 }
 
 .form__title {
@@ -15,6 +18,10 @@
     color: $white;
     text-align: center;
     position: relative;
+    @include mobile(){
+        font-size: 21px;
+        margin: 38px 0;
+    }
     &:after {
         content: '';
         display: block;
@@ -24,6 +31,10 @@
         bottom: -15px;
         left: 50%;
         transform: translateX(-50%);
+        @include mobile(){
+            width: 56px;
+            border: 2px solid $white;
+        }
     }
 }
 
@@ -32,8 +43,14 @@
     border: transparent;
     margin: 0 20px;
     margin-bottom: 20px;
+    font-family: 'Roboto-Regular';
+    font-weight: 300;
+    font-size: 16px;
     color: #acadad;
     padding: 15px 15px;
+    @include mobile(){
+        font-size: 14px;
+    }
 }
 
 .form__area {
@@ -48,6 +65,9 @@
     margin-bottom: 20px;
     height: 130px;
     resize: none;
+    @include mobile(){
+        font-size: 14px;
+    }
 }
 
 .form__btn-wrap {

@@ -1,6 +1,11 @@
 .about-contact {
     position: relative;
     height: 100vh;
+    @include mobile(){
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
 }
 
 .contact__map {
@@ -9,6 +14,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    @include mobile(){
+        height: 850px;
+    }
 }
 
 .contact__content {
@@ -22,6 +30,14 @@
     @include tablet(){
         width: 348px;
     }
+    @include mobile(){
+        position: static;
+        width: 100%;
+        transform: translate(0, 0);
+        box-sizing: border-box;
+        padding: 30px 10px;
+        padding-bottom: 0;
+    }
 }
 
 .contact__content-title {
@@ -30,8 +46,24 @@
     font-size: 35px;
     color: $grey;
     margin: 0;
+    position: relative;
+    text-transform: uppercase;
     @include tablet(){
         text-align: center;
+        margin-bottom: 30px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        width: 90px;
+        border: 2px solid #474b57;
+        bottom: -15px;
+        left: 90px;
+        @include mobile(){
+            width: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
 
@@ -51,6 +83,7 @@
         flex-direction: column;
         flex-wrap: nowrap;
     }
+    
 }
 
 .contact__content-link {

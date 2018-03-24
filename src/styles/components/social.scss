@@ -1,6 +1,9 @@
 .social-title {
     align-self: flex-start;
     padding: 20px;
+    @include mobile(){
+        padding: 10px;
+    }
 }
 
 .social {
@@ -12,6 +15,10 @@
     align-items: center;
     justify-content: space-between;
     width: 140px;
+    @include mobile(){
+        margin: 0 auto;
+        margin-bottom: 27px;
+    }
 }
 
 .social__link {
