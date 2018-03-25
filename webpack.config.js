@@ -2,8 +2,12 @@ const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const config = {
+    entry: {
+        index: './src/scripts/index.js',
+        about: './src/scripts/about.js'
+      },
     output: {
-        filename: 'bundle.js'
+        filename: '[name]-min.js'
     },
     module: {
         rules: [

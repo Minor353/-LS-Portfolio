@@ -205,9 +205,15 @@
         font-size: 14px;
         padding: 14px 5px;
     }
+    &:hover {
+        cursor: pointer;
+        background-color: $navi;
+    }
 }
 
 .autorization__btn:last-child {
     border-right: none;
     margin-left: -4px;
 }
+
+

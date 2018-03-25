@@ -49,10 +49,9 @@
 }
 
 .footer__links {
-    width: 33%;
+    width: 35%;
     height: 100px;
     padding-left: 27px;
-    padding-right: 27px;
     margin-right: 25px;
     border-right: 1px solid rgba($color: $white, $alpha: .3);
     @include tablet(){
@@ -82,6 +81,7 @@
 
 .footer__nav-item {
     margin-right: 20px;
+
     @include tablet(){
         margin-right: 0; 
     }

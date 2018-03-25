@@ -14,7 +14,6 @@
     height: 389px;
     margin: auto;
     margin-top: 8%;
-    //transform: rotateY(180deg);
     @include tablet() {
         margin-top: 20%;
     }
@@ -26,6 +25,6 @@
     }
 }
 
-/*.wrapper-greeting__rotate:hover {
+.wrapper-greeting__rotate--active {
     transform: rotateY(180deg);
-}*/
+}
