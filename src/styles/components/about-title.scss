@@ -17,12 +17,8 @@
 
 .about-title__greeting {
     position: relative;
-    @include tablet(){
-        margin-top: 25%; 
-    }
-    @include mobile(){
-        margin-top: 10%;
-    }
+    top: 25%;
+    transform: translateY(-25%);
     .greeting {
         display: flex;
         flex-direction: column;
