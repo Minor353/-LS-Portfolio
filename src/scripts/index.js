@@ -5,7 +5,7 @@ const greetingRotate = function() {
           rotateOut = document.querySelector(".autorization__btn-main");
           
           
-          console.log(rotateBtn);
+          
     
           rotateIn.addEventListener('click', function(e){
             e.preventDefault();
@@ -19,3 +19,26 @@ const greetingRotate = function() {
 };
 
 greetingRotate();
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+const paralax = function(){
+
+    const parent = document.querySelector("body"),
+          item = document.querySelector(".index-img");
+
+    var center = {
+        x: parent.offsetWidth / 2,
+        y: parent.offsetHeight / 2
+    };
+
+    parent.onmousemove = function(event) {
+    
+          item.setAttribute('style', 'transform: translate3d(' +
+            Math.round((center.x - event.pageX)/40) +'px, ' +
+            Math.round((center.y - event.pageY)/40) + 'px, 0);');
+        
+    }
+};
+
+paralax();
