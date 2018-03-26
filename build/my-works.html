@@ -12,11 +12,25 @@
   <body>
     <div class="wrapper">
       <nav class="nav nav-panel"> 
+        <div class="nav-panel__left-side"></div>
+        <div class="nav-panel__right-side"></div>
         <ul class="nav-panel__items-wrapper">
-          <li class="nav-panel__item"><a class="nav-panel__item-link" href="my-works.html">Мои работы</a></li>
-          <li class="nav-panel__item"><a class="nav-panel__item-link" href="about.html">Обо мне</a></li>
-          <li class="nav-panel__item"><a class="nav-panel__item-link" href="blog.html">Блог</a></li>
-          <li class="nav-panel__item"><a class="nav-panel__item-link" href="index.html">Авторизация</a></li>
+          <li class="nav-panel__item">
+            <div class="nav-panel__decor-left"></div>
+            <div class="nav-panel__decor-right"></div><a class="nav-panel__item-link" href="my-works.html">Мои работы</a>
+          </li>
+          <li class="nav-panel__item">
+            <div class="nav-panel__decor-left"></div>
+            <div class="nav-panel__decor-right"></div><a class="nav-panel__item-link" href="about.html">Обо мне</a>
+          </li>
+          <li class="nav-panel__item">
+            <div class="nav-panel__decor-left"></div>
+            <div class="nav-panel__decor-right"></div><a class="nav-panel__item-link" href="blog.html">Блог</a>
+          </li>
+          <li class="nav-panel__item">
+            <div class="nav-panel__decor-left"></div>
+            <div class="nav-panel__decor-right"></div><a class="nav-panel__item-link" href="index.html">Авторизация</a>
+          </li>
         </ul>
       </nav>
       <section class="about-title">
@@ -36,7 +50,7 @@
                 </svg></a></li>
           </ul>
         </div><a class="burger" href="#">
-          <div class="burger__btn"></div></a>
+          <div class="burger__btn"> </div></a>
         <div class="about-title__greeting"><img class="about-title__greeting-bg" src="assets/images/icons/stars1.svg" alt="stars">
           <section class="greeting">
             <div class="greeting__foto"><img src="assets/images/content/ava.jpg" alt="ava"></div>
@@ -45,7 +59,7 @@
               <div class="greeting__title-text">Личный сайт веб разработчика</div>
             </div>
           </section>
-        </div><a class="arrow-btn arrow-btn--position" href="#">
+        </div><a class="arrow-btn arrow-btn--position" href="#work">
           <svg class="arrow">
             <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
           </svg></a>
@@ -70,7 +84,7 @@
 <line fill="none" stroke="#dbe0e6" stroke-miterlimit="10" x1="48.25" y1="131.334" x2="8.5" y2="24.339"/>
             </svg>
           </div>
-        </div>
+        </div><a href="#" id="work"></a>
         <div class="slider"><a class="slider__arrow-prev" href="#"></a><a class="slider__arrow-next" href="#"></a>
           <div class="slider__wrap">
             <ul class="slider__items">
@@ -201,5 +215,6 @@
         </footer>
       </section>
     </div>
+    <script src="assets/scripts/work-min.js"></script>
   </body>
 </html>

@@ -20,7 +20,7 @@ block content
                                 svg.social__icon.social__icon-in
                                     use(xlink:href="assets/images/sprite.svg#in")
                 a(href="#").burger
-                    .burger__btn
+                    .burger__btn 
                 .about-title__greeting
                     img(src="assets/images/icons/stars1.svg", alt="stars").about-title__greeting-bg
                     section.greeting
@@ -29,7 +29,7 @@ block content
                         .greeting__title
                             h3.greeting__title-name Никитенко Геннадий
                             .greeting__title-text Личный сайт веб разработчика
-                a(href="#").arrow-btn.arrow-btn--position
+                a(href="#work").arrow-btn.arrow-btn--position
                     svg.arrow
                         use(xlink:href="assets/images/sprite.svg#arrow_down")
             section.works-main
@@ -49,6 +49,7 @@ block content
                                 <circle fill="#dbe0e6" cx="167.25" cy="4.25" r="4.25"/>
                                 <polyline fill="none" stroke="#dbe0e6" stroke-miterlimit="10" points="72.75,52.75 117.25,96.25 4.25,92.25 48.25,128.25 117.25,96.25 167.25,4.25 126.25,41.25 72.75,54.334 8.25,22.25 "/>
                                 <line fill="none" stroke="#dbe0e6" stroke-miterlimit="10" x1="48.25" y1="131.334" x2="8.5" y2="24.339"/>
+                a(href="#")#work
                 .slider
                     a(href="#").slider__arrow-prev
                     a(href="#").slider__arrow-next
@@ -131,3 +132,5 @@ block content
 
 
                 include ../includes/_footer.pug
+
+        script(src="assets/scripts/work-min.js")

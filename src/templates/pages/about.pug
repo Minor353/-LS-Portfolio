@@ -29,9 +29,10 @@ block content
                         .greeting__title
                             h3.greeting__title-name Никитенко Геннадий
                             .greeting__title-text Личный сайт веб разработчика
-                a(href="#").arrow-btn
+                a(href="#about").arrow-btn
                     svg.arrow
                         use(xlink:href="assets/images/sprite.svg#arrow_down")
+            a(href="#")#about
             section.about-main
                 .triangle-wrap.triangle-wrap--about
                     svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 125" preserveaspectratio="none").traingle
@@ -159,6 +160,7 @@ block content
                 });
             }
         script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuLjb-iV3X_4aUsa2TbUyXn4NxU_RdUv4&callback=initMap")
+        script(src="assets/scripts/about-min.js")
             
         
 

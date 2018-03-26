@@ -12,11 +12,25 @@
   <body>
     <div class="wrapper">
       <nav class="nav nav-panel"> 
+        <div class="nav-panel__left-side"></div>
+        <div class="nav-panel__right-side"></div>
         <ul class="nav-panel__items-wrapper">
-          <li class="nav-panel__item"><a class="nav-panel__item-link" href="my-works.html">Мои работы</a></li>
-          <li class="nav-panel__item"><a class="nav-panel__item-link" href="about.html">Обо мне</a></li>
-          <li class="nav-panel__item"><a class="nav-panel__item-link" href="blog.html">Блог</a></li>
-          <li class="nav-panel__item"><a class="nav-panel__item-link" href="index.html">Авторизация</a></li>
+          <li class="nav-panel__item">
+            <div class="nav-panel__decor-left"></div>
+            <div class="nav-panel__decor-right"></div><a class="nav-panel__item-link" href="my-works.html">Мои работы</a>
+          </li>
+          <li class="nav-panel__item">
+            <div class="nav-panel__decor-left"></div>
+            <div class="nav-panel__decor-right"></div><a class="nav-panel__item-link" href="about.html">Обо мне</a>
+          </li>
+          <li class="nav-panel__item">
+            <div class="nav-panel__decor-left"></div>
+            <div class="nav-panel__decor-right"></div><a class="nav-panel__item-link" href="blog.html">Блог</a>
+          </li>
+          <li class="nav-panel__item">
+            <div class="nav-panel__decor-left"></div>
+            <div class="nav-panel__decor-right"></div><a class="nav-panel__item-link" href="index.html">Авторизация</a>
+          </li>
         </ul>
       </nav>
       <section class="about-title">
@@ -45,11 +59,11 @@
               <div class="greeting__title-text">Личный сайт веб разработчика</div>
             </div>
           </section>
-        </div><a class="arrow-btn" href="#">
+        </div><a class="arrow-btn" href="#about">
           <svg class="arrow">
             <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
           </svg></a>
-      </section>
+      </section><a href="#" id="about"></a>
       <section class="about-main">
         <div class="triangle-wrap triangle-wrap--about">
           <svg class="traingle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 125" preserveaspectratio="none">
@@ -244,5 +258,6 @@
       }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuLjb-iV3X_4aUsa2TbUyXn4NxU_RdUv4&amp;callback=initMap"></script>
+    <script src="assets/scripts/about-min.js"></script>
   </body>
 </html>

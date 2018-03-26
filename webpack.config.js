@@ -4,7 +4,9 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const config = {
     entry: {
         index: './src/scripts/index.js',
-        about: './src/scripts/about.js'
+        about: './src/scripts/about.js',
+        work: './src/scripts/work.js',
+        blog: './src/scripts/blog.js'
       },
     output: {
         filename: '[name]-min.js'

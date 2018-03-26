@@ -1,16 +1,52 @@
 .nav-panel {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(#233265, 0.9);
-        display: none;
-        //display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-        box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgba(#233265, 0.9);
+    transform: translateX(-100%);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 1s, transform 0s 1s;
+}
+
+.nav-panel__left-side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: rgba(#233265, 0.9);
+}
+
+.nav-panel__right-side {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: rgba(#233265, 0.9);
+}
+
+.nav-panel--active {
+    transform: translateX(0);
+    z-index: 45;
+    opacity: 1;
+    background-color: transparent;
+    transition: opacity 0s, transform 0s 0s;
+    .nav-panel__left-side {
+        width: 50%;
+        transition: 1s;
+    }
+    .nav-panel__right-side {
+        width: 50%;
+        transition: 1s;
+    }
 }
 
 .nav-panel__items-wrapper {
@@ -28,7 +64,41 @@
     color: $white;
     list-style-type: none;
     margin-top: 85px;
+    position: relative;
 }
+
+.nav-panel__decor-right {
+    height: 3px;
+    width: 0;
+    background-color: $white;
+    position: absolute;
+    top: 87px;
+    left: 50%;
+    transition: 0.3s;
+}
+
+.nav-panel__decor-left {
+    height: 3px;
+    width: 0;
+    background-color: $white;
+    position: absolute;
+    top: 87px;
+    right: 50%;
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.nav-panel__item:hover {
+    .nav-panel__decor-right {
+        width: 45px;
+        transition: 0.3s;
+    }
+    .nav-panel__decor-left {
+        width: 45px;
+        transition: 0.3s;
+    }
+}
+
 
 .nav-panel__item-link {
     text-decoration: none;
@@ -37,4 +107,27 @@
     font-size: 63px;
     color: $white;
     text-transform: uppercase;
+    @include mobile(){
+        font-size: 35px;
+    }
+}
+
+
+///////////Анимация появления пунктов меню
+
+.nav-animate{
+    animation-duration: 0.9s;  /* Время работы анимации */
+    animation-fill-mode: both;  /* Поведение анимации */
+    animation-name: navInDown; /* Имя анимации */
+}
+ 
+@keyframes navInDown { /* Сама анимация */
+    0% {                /* Старт анимации */
+        opacity: 0;
+        transform: translate3d(0px, -100%, 0px);
+    }
+    100% {              /* в финале анимации - финал это заданная 0.55s */
+        opacity: 1;
+        transform: none;
+    }
 }
