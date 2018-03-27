@@ -16,8 +16,22 @@
     width: 30%;
     @include tablet(){
         position: absolute;
-        left: -33%;
+        width: 220px;
+        padding-right: 20px;
+        padding-top: 20px;
+        border-top-right-radius: 10px;
+        left: -240px;
+        transition: 0.8s;
+        top: 0;
+        bottom: 0;
+        background-color: #253468;
+        z-index: 4567;
     }
+}
+
+.blog__section-left--open {
+    left: 0;
+    transition: 0.8s;
 }
 
 .blog__title-wrap {
@@ -28,6 +42,7 @@
 
 .blog__title-item {
     padding: 12px 0; 
+    padding-right: 10px;
     a {
         text-decoration: none;
         font-family: 'Roboto-Regular';
@@ -36,6 +51,49 @@
         color: $grey;
         display: block;
         text-align: right;
+        @include tablet(){
+            color: rgba($color: $white, $alpha: .7);
+        }
+    }
+
+    &:hover {
+        a {
+            color: $navi;
+            font-family: 'Roboto-Bold';
+            font-weight: 500;
+            @include tablet(){
+                color: $white;
+            }
+        }
+    }
+}
+
+.blog__title-item--active {
+    border-right: 3px solid $navi;
+    @include tablet(){
+        border-right: 3px solid $white;
+    }
+    a {
+        font-family: 'Roboto-Bold';
+        font-weight: 500;
+        color: $navi;
+        @include tablet(){
+            color: $white;
+        }
+    }
+}
+
+.blog__title-open {
+    display: none;
+    @include tablet(){
+        display: block;
+        position: relative;
+        left: 222px;
+        width: 40px;
+        height: 50px;
+        background-color: #253468;
+        border-radius: 50%;
+        cursor: pointer;
     }
 }
 
