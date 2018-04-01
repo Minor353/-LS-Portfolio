@@ -1,0 +1,76 @@
+.about-section__title {
+    font-size: 21px;
+    font-weight: 500;
+    color: #474b57;
+    margin-bottom: 35px;
+}
+
+.skills-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-size: 16px;
+    font-weight: 300;
+    color: #474b57;
+    margin-right: 25px;
+}
+
+.skills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list {
+    margin-right: 60px;
+    margin-bottom: 25px;
+}
+
+.skill-wrap {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.skill-value {
+    margin-left: auto;
+    transform: translateX(-50%);
+}
+
+.input-value {
+    width: 45px;
+    padding: 10px 0;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 300;
+    color: #474b57;
+    border: none;
+    background-color: #f0efe9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn--margin {
+    margin-left: 25px;
+}
+
+.btn-save {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    background-color: $blue;
+    padding: 10px 15px;
+    border-radius: 5px;
+}

@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  background: #ccc;
+}
+
+.item {
+  border-right: 2px solid #fff;
+}
+
+.link {
+  padding: 20px 65px;
+  display: block;
+  background: #ccc;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #74767c;
+}
+
+.router-link-exact-active {
+  background: #fff;
+  color: #0548be;
+}
