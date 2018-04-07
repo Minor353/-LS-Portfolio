@@ -4,7 +4,7 @@ block variables
 block content 
         .wrapper
             include ../includes/_nav-panel.pug    
-            section.about-title
+            section.about-title#about-title
                 .social-title
                     ul.social
                         li.social__link
@@ -126,11 +126,16 @@ block content
                                 button(type="reset").form__btn.form__btn-reset Очистить 
 
 
-                a(href="#").arrow-btn.arrow-btn--up
+                a(href="#about-title").arrow-btn.arrow-btn--up
                     svg.arrow
                         use(xlink:href="assets/images/sprite.svg#arrow_down")
 
 
                 include ../includes/_footer.pug
+                div#hellopreloader
+                    div#hellopreloader_preload
+                        .hellopreloader-bg
+        script(type="text/javascript") var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};
 
+        script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
         script(src="assets/scripts/work-min.js")

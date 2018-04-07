@@ -59,4 +59,8 @@ block content
                                     button(type="submit").autorization__btn.autorization__btn-in Войти
                 img(src="assets/images/content/index-bg.png", alt="bg").index-img
                 .copywriting © Владимир Астахов | создано с любовью в LoftSchool | 2018
+                div#hellopreloader
+                    div#hellopreloader_preload
+                        .hellopreloader-bg
+        script(type="text/javascript") var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};
         script(src="assets/scripts/index-min.js")

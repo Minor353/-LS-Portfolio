@@ -2,5 +2,8 @@ const navigateOpen = require('./component/nav.js');
 navigateOpen();
 
 
-const sliderScrol = require('./component/slider.js');
-sliderScrol();
+const sliderScroll = require('./component/slider.js');
+sliderScroll();
+
+const scrollAnc = require('./component/scroll-anc.js');
+scrollAnc(0);

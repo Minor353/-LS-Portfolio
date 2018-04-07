@@ -147,6 +147,10 @@ block content
                                     use(xlink:href="assets/images/sprite.svg#map_n")
                                 .contact__link-text Днепр пр.Героев д. 18
             include ../includes/_footer.pug
+            div#hellopreloader
+                    div#hellopreloader_preload
+                        .hellopreloader-bg
+        script(type="text/javascript") var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};
         script.
             function initMap() {
                 var myMap = {lat: 48.415578, lng: 35.05997};
@@ -160,6 +164,7 @@ block content
                 });
             }
         script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuLjb-iV3X_4aUsa2TbUyXn4NxU_RdUv4&callback=initMap")
+        script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
         script(src="assets/scripts/about-min.js")
             
         

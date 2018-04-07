@@ -144,7 +144,13 @@
         </div>
         <div class="footer__copyright">© Владимир Астахов | создано с любовью в LoftSchool | 2018</div>
       </footer>
+      <div id="hellopreloader">
+        <div id="hellopreloader_preload">
+          <div class="hellopreloader-bg"></div>
+        </div>
+      </div>
     </div>
+    <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="assets/scripts/blog-min.js"></script>
   </body>

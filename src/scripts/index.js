@@ -2,7 +2,9 @@ const greetingRotate = function() {
 
     const rotateIn = document.querySelector(".btn-autorization"),
           rotateItem =  document.querySelector(".wrapper-greeting__rotate"),
-          rotateOut = document.querySelector(".autorization__btn-main");
+          rotateOut = document.querySelector(".autorization__btn-main"),
+          allOut = document.querySelector(".index-wrapper"),
+          allOut2 = document.querySelector(".wrapper-greeting");
           
           
           
@@ -15,6 +17,13 @@ const greetingRotate = function() {
           rotateOut.addEventListener('click', function(e){
             e.preventDefault();
             rotateItem.classList.remove("wrapper-greeting__rotate--active");
+          });
+
+          allOut.addEventListener('click', function(e){
+            let eTarget = e.target;
+            if (eTarget == allOut  || eTarget == allOut2) {
+              rotateItem.classList.remove("wrapper-greeting__rotate--active");
+            };
           });
 };
 
