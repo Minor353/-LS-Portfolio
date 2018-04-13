@@ -8,15 +8,15 @@ block content
                 .social-title
                     ul.social
                         li.social__link
-                            a.social__link-vk(href="#")
+                            a.social__link-vk(href="https://vk.com/minorvankertis" target="_blank")
                                 svg.social__icon.social__icon-vk
                                     use(xlink:href="assets/images/sprite.svg#vk") 
                         li.social__link
-                            a.social__link-git(href="#")
+                            a.social__link-git(href="https://github.com/Minor353" target="_blank")
                                 svg.social__icon.social__icon-git
                                     use(xlink:href="assets/images/sprite.svg#github")
                         li.social__link
-                            a.social__link-in(href="#")
+                            a.social__link-in(href="https://www.linkedin.com/in/hennadii-nikitenko-b68494a0/" target="_blank")
                                 svg.social__icon.social__icon-in
                                     use(xlink:href="assets/images/sprite.svg#in")
                 a(href="#").burger
@@ -59,27 +59,27 @@ block content
                                 .slider__img
                                     img(src="assets/images/content/work-1.png", alt="site-foto")
                                 .slider__content
-                                    h4.slider__content-title Сайт школы онлайн образования
-                                    .slider__content-description HTML, CSS, JavaScript
-                                    a(href="#").slider__content-link Посмотреть сайт
+                                    h4.slider__content-title Сайт Portfolio
+                                    .slider__content-description HTML, CSS, JavaScript, Pug, SCSS, PHP
+                                    a(href="http://front-dev.com/" target="_blank").slider__content-link Посмотреть сайт
                                         svg.slider__link-icon
                                             use(xlink:href="assets/images/sprite.svg#link")
                             li.slider__item
                                 .slider__img
                                     img(src="assets/images/content/work-2.png", alt="site-foto")
                                 .slider__content 
-                                    h4.slider__content-title Сайт фитнес центра
-                                    .slider__content-description HTML, CSS, JavaScript
-                                    a(href="#").slider__content-link Посмотреть сайт
+                                    h4.slider__content-title Сайт бургерной "Mr Burger"
+                                    .slider__content-description HTML, CSS, JavaScript, PHP
+                                    a(href="http://front-dev.com/burger" target="_blank").slider__content-link Посмотреть сайт
                                         svg.slider__link-icon
                                             use(xlink:href="assets/images/sprite.svg#link")
                             li.slider__item
                                 .slider__img
                                     img(src="assets/images/content/work-3.png", alt="site-foto")
                                 .slider__content
-                                    h4.slider__content-title Сайт IT Loft
-                                    .slider__content-description HTML, CSS, JavaScript
-                                    a(href="#").slider__content-link Посмотреть сайт
+                                    h4.slider__content-title Сайт для приложения "PINK"
+                                    .slider__content-description HTML, CSS
+                                    a(href="http://front-dev.com/pink" target="_blank").slider__content-link Посмотреть сайт
                                         svg.slider__link-icon
                                             use(xlink:href="assets/images/sprite.svg#link")
                     .slider__paginator
@@ -116,11 +116,11 @@ block content
                                 .my-feedback__name Сабанцев Владимир
                                 .my-feedback__description - преподаватель Loftschool
                     .my-feedback__form
-                        form(action="#", method="post").form
+                        form(action="server.php" class="form" method="post" id="form").form
                             h3.form__title Связатся со мной
-                            input(type="text" required placeholder="Ваше имя").form__field
-                            input(type="text" required placeholder="Ваш email").form__field
-                            textarea(name="massage" required placeholder="Ваше сообщение").form__area
+                            input(type="text" required placeholder="Ваше имя" name="name").form__field
+                            input(type="text" required placeholder="Ваш email" name="email").form__field
+                            textarea( required placeholder="Ваше сообщение" name="text").form__area
                             .form__btn-wrap
                                 button(type="submit").form__btn.form__btn-submit Отправить
                                 button(type="reset").form__btn.form__btn-reset Очистить 
@@ -129,6 +129,11 @@ block content
                 a(href="#about-title").arrow-btn.arrow-btn--up
                     svg.arrow
                         use(xlink:href="assets/images/sprite.svg#arrow_down")
+
+                .form-popup
+                    .form-popup__wrapper
+                        h5.form-popup__name
+                        a(href="#").close-btn Закрыть
 
 
                 include ../includes/_footer.pug

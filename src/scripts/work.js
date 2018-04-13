@@ -7,3 +7,8 @@ sliderScroll();
 
 const scrollAnc = require('./component/scroll-anc.js');
 scrollAnc(0);
+
+
+const formSubmit = require('./component/form-submit.js');
+
+formSubmit();

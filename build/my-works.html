@@ -36,15 +36,15 @@
       <section class="about-title" id="about-title">
         <div class="social-title">
           <ul class="social">
-            <li class="social__link"><a class="social__link-vk" href="#">
+            <li class="social__link"><a class="social__link-vk" href="https://vk.com/minorvankertis" target="_blank">
                 <svg class="social__icon social__icon-vk">
                   <use xlink:href="assets/images/sprite.svg#vk"> </use>
                 </svg></a></li>
-            <li class="social__link"><a class="social__link-git" href="#">
+            <li class="social__link"><a class="social__link-git" href="https://github.com/Minor353" target="_blank">
                 <svg class="social__icon social__icon-git">
                   <use xlink:href="assets/images/sprite.svg#github"></use>
                 </svg></a></li>
-            <li class="social__link"><a class="social__link-in" href="#">
+            <li class="social__link"><a class="social__link-in" href="https://www.linkedin.com/in/hennadii-nikitenko-b68494a0/" target="_blank">
                 <svg class="social__icon social__icon-in">
                   <use xlink:href="assets/images/sprite.svg#in"></use>
                 </svg></a></li>
@@ -91,8 +91,8 @@
               <li class="slider__item">
                 <div class="slider__img"><img src="assets/images/content/work-1.png" alt="site-foto"></div>
                 <div class="slider__content">
-                  <h4 class="slider__content-title">Сайт школы онлайн образования</h4>
-                  <div class="slider__content-description">HTML, CSS, JavaScript</div><a class="slider__content-link" href="#">Посмотреть сайт
+                  <h4 class="slider__content-title">Сайт Portfolio</h4>
+                  <div class="slider__content-description">HTML, CSS, JavaScript, Pug, SCSS, PHP</div><a class="slider__content-link" href="http://front-dev.com/" target="_blank">Посмотреть сайт
                     <svg class="slider__link-icon">
                       <use xlink:href="assets/images/sprite.svg#link"></use>
                     </svg></a>
@@ -101,8 +101,8 @@
               <li class="slider__item">
                 <div class="slider__img"><img src="assets/images/content/work-2.png" alt="site-foto"></div>
                 <div class="slider__content"> 
-                  <h4 class="slider__content-title">Сайт фитнес центра</h4>
-                  <div class="slider__content-description">HTML, CSS, JavaScript</div><a class="slider__content-link" href="#">Посмотреть сайт
+                  <h4 class="slider__content-title">Сайт бургерной "Mr Burger"</h4>
+                  <div class="slider__content-description">HTML, CSS, JavaScript, PHP</div><a class="slider__content-link" href="http://front-dev.com/burger" target="_blank">Посмотреть сайт
                     <svg class="slider__link-icon">
                       <use xlink:href="assets/images/sprite.svg#link"></use>
                     </svg></a>
@@ -111,8 +111,8 @@
               <li class="slider__item">
                 <div class="slider__img"><img src="assets/images/content/work-3.png" alt="site-foto"></div>
                 <div class="slider__content">
-                  <h4 class="slider__content-title">Сайт IT Loft</h4>
-                  <div class="slider__content-description">HTML, CSS, JavaScript</div><a class="slider__content-link" href="#">Посмотреть сайт
+                  <h4 class="slider__content-title">Сайт для приложения "PINK"</h4>
+                  <div class="slider__content-description">HTML, CSS</div><a class="slider__content-link" href="http://front-dev.com/pink" target="_blank">Посмотреть сайт
                     <svg class="slider__link-icon">
                       <use xlink:href="assets/images/sprite.svg#link"></use>
                     </svg></a>
@@ -158,11 +158,11 @@
             </li>
           </ul>
           <div class="my-feedback__form">
-            <form class="form" action="#" method="post">
+            <form class="form form" action="server.php" method="post" id="form">
               <h3 class="form__title">Связатся со мной</h3>
-              <input class="form__field" type="text" required placeholder="Ваше имя">
-              <input class="form__field" type="text" required placeholder="Ваш email">
-              <textarea class="form__area" name="massage" required placeholder="Ваше сообщение"></textarea>
+              <input class="form__field" type="text" required placeholder="Ваше имя" name="name">
+              <input class="form__field" type="text" required placeholder="Ваш email" name="email">
+              <textarea class="form__area" required placeholder="Ваше сообщение" name="text"></textarea>
               <div class="form__btn-wrap">
                 <button class="form__btn form__btn-submit" type="submit">Отправить</button>
                 <button class="form__btn form__btn-reset" type="reset">Очистить </button>
@@ -173,6 +173,11 @@
           <svg class="arrow">
             <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
           </svg></a>
+        <div class="form-popup">
+          <div class="form-popup__wrapper">
+            <h5 class="form-popup__name"></h5><a class="close-btn" href="#">Закрыть</a>
+          </div>
+        </div>
         <footer class="footer">
           <div class="footer__content-wrap">
             <div class="footer__text">
@@ -187,15 +192,15 @@
               </ul>
               <div class="footer__social-wrap">
                 <ul class="social">
-                  <li class="social__link"><a class="social__link-vk" href="#">
+                  <li class="social__link"><a class="social__link-vk" href="https://vk.com/minorvankertis" target="_blank"> 
                       <svg class="social__icon social__icon-vk social__icon--color">
                         <use xlink:href="assets/images/sprite.svg#vk"> </use>
                       </svg></a></li>
-                  <li class="social__link"><a class="social__link-git" href="#">
+                  <li class="social__link"><a class="social__link-git" href="https://github.com/Minor353" target="_blank">
                       <svg class="social__icon social__icon-git social__icon--color">
                         <use xlink:href="assets/images/sprite.svg#github"></use>
                       </svg></a></li>
-                  <li class="social__link"><a class="social__link-in" href="#">
+                  <li class="social__link"><a class="social__link-in" href="https://www.linkedin.com/in/hennadii-nikitenko-b68494a0/" target="_blank">
                       <svg class="social__icon social__icon-in social__icon--color">
                         <use xlink:href="assets/images/sprite.svg#in"></use>
                       </svg></a></li>
