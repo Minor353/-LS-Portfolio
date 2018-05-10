@@ -5,11 +5,11 @@ module.exports = function(){
         circleAnimate = document.querySelectorAll(".circles");
 
     window.onscroll = function() {
-      if (window.pageYOffset > blockCord) {
+      if (window.pageYOffset > (blockCord - 27)) {
         for (let i = 0; i < circleAnimate.length; i++) {
           circleAnimate[i].classList.add("circles--active");
         };
-      } else if (window.pageYOffset < blockCord) {
+      } else if (window.pageYOffset < blockCord - 250) {
         for (let i = 0; i < circleAnimate.length; i++) {
           circleAnimate[i].classList.remove("circles--active");
         };

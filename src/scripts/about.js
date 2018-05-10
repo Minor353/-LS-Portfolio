@@ -5,4 +5,4 @@ const circleAnimate = require('./component/circle.js');
 circleAnimate();
 
 const scrollAnc = require('./component/scroll-anc.js');
-scrollAnc(5);
+scrollAnc(27);

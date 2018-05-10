@@ -33,16 +33,25 @@
 
 .about-title__greeting-bg {
     position: absolute;
-    width: 500px;
-    height: 250px;
     top: -25px;
-    left: -140px;
-    opacity: 0.1;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
     z-index: 1;
     @include mobile(){
         width: 280px;
         height: auto;
-        top: -8px;
-        left: -40px;
+        top: -100px;
+        left: 105px;
+    }
+}
+
+.about-title__greeting-blog {
+    top: 110px;
+    @include mobile(){
+        width: 280px;
+        height: auto;
+        top: 125px;
+        left: 98px;
     }
 }

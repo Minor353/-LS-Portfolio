@@ -1,5 +1,4 @@
 module.exports = function(num){
-    console.log($);
             $(".arrow-btn").on("click", function (event) {
                 //отменяем стандартную обработку нажатия по ссылке
                 event.preventDefault();

@@ -7,7 +7,7 @@
     font-weight: 300;
     font-size: 63px;
     text-transform: uppercase;
-    color: $white;
+    color: #fff;
     position: relative; 
     @include tablet(){
         font-size: 48px;
@@ -18,10 +18,10 @@
 }
 
 .works-main__title-bg {
-    transform: rotate(190deg);
     position: absolute;
     top: -42px;
-    left: 12px;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0.2;
     z-index: -1;
     @include tablet(){

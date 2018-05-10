@@ -4,10 +4,40 @@
     bottom: -5%;
     left: -5%;
     transform: translateZ(0);
-    z-index: -1;
     @include tablet() {
         //height: 210px;
         display: none;
     }
 }
 
+body {
+    background: grey;
+}
+
+.index-img__layer-1 {
+    width: 60%;
+    z-index: -1;
+}
+
+.index-img__layer-2 {
+    z-index: -2;
+    bottom: -40%;
+}
+
+.index-img__layer-3 {
+    z-index: -3;
+    bottom: -45%;
+}
+
+.index-img__layer-4 {
+    z-index: -4;
+    bottom: -48%;
+}
+
+.index-img__layer-5 {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -5;
+}

@@ -39,7 +39,7 @@
 }
 
 .form__field {
-    background-color: rgba($color: $grey, $alpha: .3);
+    background-color: rgba($color: $grey, $alpha: .9);
     border: transparent;
     margin: 0 20px;
     margin-bottom: 20px;
@@ -54,7 +54,7 @@
 }
 
 .form__area {
-    background-color: rgba($color: $grey, $alpha: .3);
+    background-color: rgba($color: $grey, $alpha: .9);
     border: transparent;
     font-family: 'Roboto-Regular';
     font-weight: 300;
@@ -88,11 +88,11 @@
 }
 
 .form__btn-submit {
-    background-color: $blue;
+    background-color: #006f7b;
     transition: 0.3s;
     color: $white;
     &:hover {
-        background-color: $navi; 
+        background-color: #038f9e; 
         transition: 0.3s;
     }
 }

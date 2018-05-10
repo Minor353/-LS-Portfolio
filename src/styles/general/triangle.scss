@@ -59,12 +59,12 @@
 .triangle--works {
     height: 288px;
     .traingle__left{
-        fill: rgba($color: #151a29, $alpha: .9);
+        fill: rgba(155,185,183,  .7);
         stroke: transparent;
     }
     
     .traingle__right{
-        fill: rgba($color: #151a29, $alpha: .9);
+        fill: rgba(155,185,183, .7);
         stroke: transparent;
     }
     @include mobile(){

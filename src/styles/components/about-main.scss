@@ -56,10 +56,13 @@
 }
 
 .about-main__left-title-bg {
-    transform: rotate(190deg);
     position: absolute;
-    top: -24px;
-    left: 25px;
+    top: -123px;
+    left: 50%;
+    width: 320px;
+    height: 300px;
+    opacity: .2;
+    transform: translateX(-50%);
     z-index: -1;
     @include mobile(){
         display: none;
