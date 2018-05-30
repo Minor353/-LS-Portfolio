@@ -31,7 +31,8 @@
         height: 140px;
     }
     @include mobile(){
-        left: 83px;
+        left: 50%;
+        transform: translateX(-50%);
         top: -20px;
         width: 122px;
         height: 85px;
